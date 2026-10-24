@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="58QPVZD09sBhLw64qMiFP96ACN0cTctu8VX2QxIB">
+    <meta name="theme-color" content="#7A1315">
+    
+    <title>About Us | Touch Point Group - Heritage, Leadership &amp; Sister Concerns</title>
+    <meta name="description" content="Discover the full profile of Touch Point (Since 2011) — Symbol of Elegance, Beauty &amp; Innovation. Explore our heritage, leadership, technical specifications, and sister concerns.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="assets/images/touchpoint-logo.png">
+    <link rel="apple-touch-icon" href="assets/images/touchpoint-logo.png">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+<body>
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="container announcement-inner">
+            <div class="announcement-ticker">
+                <span style="background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.7rem; text-transform: uppercase;">SPECIAL OFFER</span>
+                <span>Free Home Delivery across Bangladesh on orders over ৳50,000 | 10-Year Solid Wood Warranty</span>
+            </div>
+            <div class="announcement-links">
+                <a href="tel:+8801741452712">
+                    <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                    <span>+880 1741-452712</span>
+                </a>
+                <a href="tel:+8801911007179" style="display: none; @media(min-width: 768px){ display: inline-flex; }">
+                    <span>/ +880 1911-007179</span>
+                </a>
+                <span style="opacity: 0.4;">|</span>
+                <a href="showrooms.html">
+                    <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    <span>Dhaka Studios &amp; Factory</span>
+                </a>
+                <span style="opacity: 0.4;">|</span>
+                <span style="font-weight: 700; color: #fef08a;">BDT (৳)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. STICKY MAIN HEADER -->
+    <header class="header-sticky">
+        <div class="container">
+            <div class="header-main">
+                <!-- Brand Logo (Touch Point) -->
+                <a href="index.html" class="brand-logo" title="Touch Point" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                    <img src="assets/images/touchpoint-logo.png" alt="Touch Point Logo" style="height: 48px; width: auto; object-fit: contain;" />
+                    <div style="display: flex; flex-direction: column; line-height: 1.1;">
+                        <span style="font-size: 1.45rem; font-weight: 800; letter-spacing: -0.5px;"><span style="color: #ea580c;">TOUCH</span> <span style="color: #007f82;">POINT</span></span>
+                        <span style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #007f82;">Luxury Furniture</span>
+                    </div>
+                </a>
+
+                <!-- Live Auto-Search Bar -->
+                <div class="header-search">
+                    <form action="#" onsubmit="event.preventDefault();" method="GET" class="search-input-wrapper">
+                        <input type="text" name="search" id="globalSearchInput" class="search-input" placeholder="Search sofas, beds, teak dining sets, office desks..." autocomplete="off" />
+                        <button type="submit" class="search-submit-btn" aria-label="Search">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </button>
+                    </form>
+                    <div id="searchDropdown" class="search-dropdown"></div>
+                </div>
+
+                <!-- Header Actions (Wishlist, Consultation, Cart) -->
+                <div class="header-actions">
+                    <!-- Free Interior Consultation Button -->
+                    <button class="filter-tab-btn btn-sheen pulse-glow" data-open-consultation style="display: none; @media(min-width: 992px){ display: flex; } align-items: center; gap: 6px; font-size: 0.8125rem; font-weight: 700; border-radius: 8px; border-color: var(--gold); color: #92400e; background: #fffbeb; box-shadow: 0 4px 12px rgba(217, 119, 6, 0.15);">
+                        <span class="animate-float">🎨</span>
+                        <span>Free Consultation</span>
+                    </button>
+
+                    <!-- Wishlist -->
+                    <a href="http://localhost:8080/products?filter=trending" class="header-action-btn" title="Saved Wishlist">
+                        <div class="action-icon-wrap">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                            <span class="action-badge wishlist-count-badge" style="display: none;">0</span>
+                        </div>
+                    </a>
+
+                    <!-- Shopping Cart Trigger -->
+                                        <button class="header-action-btn" data-cart-open title="View Shopping Cart">
+                        <div class="action-icon-wrap" style="background-color: #fdf2f2; color: var(--primary);">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                            <span class="action-badge cart-count-badge" style="display:none;">0</span>
+                        </div>
+                        <div class="action-details" style="display: none; @media(min-width: 768px){ display: flex; }">
+                            <span class="action-sub">My Cart</span>
+                            <span class="action-amount" id="headerCartTotal">৳0</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secondary Category Navigation Bar -->
+        <nav class="header-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link ">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About Touch Point</a></li>
+                    <li><a href="http://localhost:8080/products?category=living-room" class="nav-link">Living Room</a></li>
+                    <li><a href="http://localhost:8080/products?category=bedroom" class="nav-link">Bedroom</a></li>
+                    <li><a href="http://localhost:8080/products?category=dining-room" class="nav-link">Dining Room</a></li>
+                    <li><a href="http://localhost:8080/products?category=office-furniture" class="nav-link">Office Furniture</a></li>
+                    <li><a href="http://localhost:8080/products?category=wardrobes-storage" class="nav-link">Wardrobes</a></li>
+                    <li><a href="http://localhost:8080/products?category=interior-solutions" class="nav-link">Interior Solutions</a></li>
+                    
+                    <!-- Sister Concerns Dropdown -->
+                    <li class="nav-item-dropdown">
+                        <a href="sister-concerns.html" class="nav-link " style="color: #ea580c; font-weight: 700;">
+                            <span>Sister Concerns</span>
+                            <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </a>
+                        <div class="nav-dropdown-menu">
+                            <a href="sister-concerns.html" class="nav-dropdown-item">
+                                <div style="font-weight: 800; color: var(--dark); font-size: 0.875rem;">Touch Point Group Ventures</div>
+                                <div style="font-size: 0.72rem; color: var(--muted-text);">All Sister Concerns Overview</div>
+                            </a>
+                            <a href="http://localhost:8080/sister-concerns#touchpoint-associates" class="nav-dropdown-item">
+                                <div style="font-weight: 800; color: #0284c7; font-size: 0.875rem;">🏛️ Touch Point Associates</div>
+                                <div style="font-size: 0.72rem; color: var(--muted-text);">Architectural Commercial &amp; Bank Turnkey Fit-outs</div>
+                            </a>
+                            <a href="http://localhost:8080/sister-concerns#ndp-tours" class="nav-dropdown-item">
+                                <div style="font-weight: 800; color: #16a34a; font-size: 0.875rem;">🏝️ NDP Tours &amp; Travels</div>
+                                <div style="font-size: 0.72rem; color: var(--muted-text);">Saint Martin Tour Packages, Sea Cruisers &amp; Resorts</div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="http://localhost:8080/products?filter=bestseller" class="nav-link" style="color: var(--primary);">
+                            <span>Best Sellers</span>
+                            <span class="nav-tag-badge">HOT</span>
+                        </a>
+                    </li>
+                    <li><a href="showrooms.html" class="nav-link ">Offices &amp; Factory</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN BODY CONTENT -->
+    <main>
+        
+    <!-- HERO HEADER WITH AURORA LIGHT MOTION -->
+    <div style="background: linear-gradient(135deg, #09122c 0%, #172554 60%, #1e3a8a 100%); color: #fff; padding: 5rem 0 4rem 0; position: relative; overflow: hidden; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+        <div class="aurora-orb-1" style="position: absolute; top: -70px; right: -70px; width: 380px; height: 380px; border-radius: 50%; background: radial-gradient(circle, rgba(234, 88, 12, 0.3) 0%, transparent 70%); filter: blur(50px); pointer-events: none;"></div>
+        <div class="aurora-orb-2" style="position: absolute; bottom: -80px; left: -80px; width: 380px; height: 380px; border-radius: 50%; background: radial-gradient(circle, rgba(0, 127, 130, 0.3) 0%, transparent 70%); filter: blur(60px); pointer-events: none;"></div>
+
+        <div class="container" style="text-align: center; max-width: 880px; position: relative; z-index: 2;">
+            <div class="reveal" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.12); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.25); padding: 6px 18px; border-radius: 9999px; font-size: 0.8125rem; font-weight: 700; color: #facc15; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.08em;">
+                <span class="animate-float">✨</span>
+                <span>Symbol of Elegance, Beauty &amp; Innovation &bull; Since 2011</span>
+            </div>
+
+            <h1 class="font-corporate reveal delay-1" style="font-size: clamp(2.3rem, 4.5vw, 3.4rem); color: #ffffff; line-height: 1.2; margin-bottom: 1.25rem;">
+                Crafting Enduring Legacies with <span style="background: linear-gradient(90deg, #ff9b2e 0%, #2dd4bf 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Touch Point</span>
+            </h1>
+
+            <p class="reveal delay-2" style="font-size: 1.08rem; color: #cbd5e1; line-height: 1.8; margin-bottom: 2rem;">
+                With over two decades of manufacturing mastery, <strong>Touch Point</strong> stands as one of Bangladesh's premier vertically integrated interior conglomerates. From our central automated factories in Dhaka to architectural projects across 64 districts, we transform spaces into expressions of refinement, sustainability, and technological precision.
+            </p>
+
+            <div class="reveal delay-3" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                <a href="#heritage" class="filter-tab-btn active btn-sheen" style="padding: 0.85rem 1.8rem; border-radius: 9999px; font-weight: 700;">
+                    Our Heritage &amp; Philosophy ↓
+                </a>
+                <a href="#sister-concerns-overview" class="filter-tab-btn btn-sheen" style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(8px); border-color: rgba(255, 255, 255, 0.3); color: #fff; padding: 0.85rem 1.8rem; border-radius: 9999px; font-weight: 700;">
+                    Our Sister Concerns ↓
+                </a>
+                <a href="#leadership" class="filter-tab-btn btn-sheen" style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(8px); border-color: rgba(255, 255, 255, 0.3); color: #fff; padding: 0.85rem 1.8rem; border-radius: 9999px; font-weight: 700;">
+                    Executive Management ↓
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- METRICS RIBBON WITH ANIMATED STATS -->
+    <div style="background: #ffffff; border-bottom: 1px solid var(--border-color); padding: 1.85rem 0; box-shadow: var(--shadow-sm);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; text-align: center;">
+                <div class="reveal delay-1">
+                    <div style="font-size: 2.2rem; font-weight: 800; color: #ea580c; line-height: 1;" data-counter="2004">2004</div>
+                    <div style="font-size: 0.8125rem; font-weight: 700; color: var(--muted-text); text-transform: uppercase; margin-top: 4px;">Pioneering Roots</div>
+                </div>
+                <div class="reveal delay-2">
+                    <div style="font-size: 2.2rem; font-weight: 800; color: #007f82; line-height: 1;" data-counter="50" data-suffix="%+">50%+</div>
+                    <div style="font-size: 0.8125rem; font-weight: 700; color: var(--muted-text); text-transform: uppercase; margin-top: 4px;">Targeted Growth Rate</div>
+                </div>
+                <div class="reveal delay-3">
+                    <div style="font-size: 2.2rem; font-weight: 800; color: #ea580c; line-height: 1;" data-counter="3" data-suffix=" Units">3 Units</div>
+                    <div style="font-size: 0.8125rem; font-weight: 700; color: var(--muted-text); text-transform: uppercase; margin-top: 4px;">Dynamic Business Concerns</div>
+                </div>
+                <div class="reveal delay-4">
+                    <div style="font-size: 2.2rem; font-weight: 800; color: #007f82; line-height: 1;" data-counter="50" data-suffix="+">50+</div>
+                    <div style="font-size: 0.8125rem; font-weight: 700; color: var(--muted-text); text-transform: uppercase; margin-top: 4px;">Corporate &amp; Bank Clients</div>
+                </div>
+                <div class="reveal delay-5">
+                    <div style="font-size: 2.2rem; font-weight: 800; color: #ea580c; line-height: 1;" data-counter="100" data-suffix="%">100%</div>
+                    <div style="font-size: 0.8125rem; font-weight: 700; color: var(--muted-text); text-transform: uppercase; margin-top: 4px;">Eco-Friendly Materials</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN BODY CONTENT -->
+    <div id="heritage" class="container section-padding" style="scroll-margin-top: 70px;">
+
+        <!-- 1. COMPANY OVERVIEW & VERTICAL INTEGRATION -->
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3.5rem; align-items: center; margin-bottom: 5rem;">
+            <div>
+                <span style="font-size: 0.8125rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.08em;">Company Overview</span>
+                <h2 class="font-corporate" style="font-size: clamp(2rem, 3.2vw, 2.6rem); color: var(--dark); margin: 0.35rem 0 1.25rem 0; line-height: 1.25;">
+                    One of the Leading Interior &amp; Furniture Conglomerates in Bangladesh
+                </h2>
+                
+                <p style="font-size: 0.95rem; color: var(--body-text); line-height: 1.8; margin-bottom: 1rem;">
+                    With an average annual growth of over 50%, <strong>TOUCH POINT</strong> is at present one of the most accomplished and vertically integrated business houses in Bangladesh. Bonded with three thriving business units, Touch Point stands as a living testament to purposeful entrepreneurship and quality control.
+                </p>
+
+                <p style="font-size: 0.95rem; color: var(--body-text); line-height: 1.8; margin-bottom: 1rem;">
+                    Touch Point owns and successfully operates modern manufacturing and trading concerns led by the prudent leadership of its founder &amp; proprietor <strong>Mr. Md. Ariful Islam</strong>, along with distinguished architects, civil engineers, and chartered financial specialists.
+                </p>
+
+                <p style="font-size: 0.95rem; color: var(--body-text); line-height: 1.8; margin-bottom: 1.5rem;">
+                    Secondly, our setup of modern factory facilities in Satarkul and Uttar Badda ventures into every facet of the lifestyles of Bangladeshis. Today, Touch Point dominates the consumer and corporate market for seasoned timber, melamine coated particleboard, modular workstations, and ergonomic executive seating with eco-friendly and flame-retardant standards.
+                </p>
+
+                <div style="background: #fffbeb; border-left: 4px solid var(--gold); padding: 1rem 1.25rem; border-radius: 0 8px 8px 0; margin-bottom: 1.5rem;">
+                    <div style="font-size: 0.9375rem; font-weight: 800; color: #92400e; margin-bottom: 4px;">Vertical Integration Advantage</div>
+                    <p style="font-size: 0.84rem; color: #78350f; line-height: 1.6; margin: 0;">
+                        Analogous high-spec raw materials, precision CNC cutting, in-house seasoning kilns, and centralized logistics enable Touch Point to deliver bespoke quality at unmatchable factory-direct efficiency.
+                    </p>
+                </div>
+
+                <div style="display: flex; gap: 1rem;">
+                    <a href="showrooms.html" class="filter-tab-btn active" style="padding: 0.8rem 1.6rem; border-radius: 8px;">
+                        Tour Showrooms &amp; Factory
+                    </a>
+                    <button data-open-consultation class="filter-tab-btn" style="padding: 0.8rem 1.6rem; border-radius: 8px;">
+                        Book Consultation
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <div style="position: relative;">
+                    <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?auto=format&fit=crop&w=900&q=80" alt="Touch Point Master Craftsmanship" style="width: 100%; height: 480px; object-fit: cover; border-radius: var(--radius-xl); box-shadow: var(--shadow-xl);" />
+                    <div style="position: absolute; bottom: -20px; left: -20px; background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; box-shadow: var(--shadow-lg); max-width: 280px;">
+                        <div style="font-size: 1.8rem; font-weight: 800; color: #ea580c; line-height: 1;">12% ± 2%</div>
+                        <div style="font-size: 0.8125rem; font-weight: 700; color: var(--dark); margin-top: 4px;">Kiln Moisture Standard</div>
+                        <div style="font-size: 0.72rem; color: var(--muted-text); margin-top: 2px;">Cured against termite, fungus &amp; humidity deformation.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. AIM, SPIRIT & THE WAY (From 2021 Profile) -->
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 3rem 2.5rem; margin-bottom: 5rem;">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto 2.5rem auto;">
+                <span style="font-size: 0.8125rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.08em;">Guiding Philosophy</span>
+                <h3 class="font-corporate" style="font-size: 2.2rem; color: var(--dark); margin-top: 0.25rem;">Our AIM, SPIRIT &amp; THE WAY</h3>
+                <div class="section-divider"></div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <!-- AIM -->
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+                    <div style="width: 48px; height: 48px; border-radius: 12px; background: #eff6ff; color: #2563eb; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem;">
+                        🎯
+                    </div>
+                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--dark); margin-bottom: 0.75rem;">THE AIM</h4>
+                    <p style="font-size: 0.875rem; color: var(--body-text); line-height: 1.7; flex: 1;">
+                        <em>"The sky is not the limit for us, but our expectations are within limits. Our imagination soars beyond conventional barriers. We share our destiny with our beloved motherland. We want to serve her better in the greater quest for national economic emancipation."</em>
+                    </p>
+                </div>
+
+                <!-- THE SPIRIT -->
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+                    <div style="width: 48px; height: 48px; border-radius: 12px; background: #fef2f2; color: #dc2626; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem;">
+                        🔥
+                    </div>
+                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--dark); margin-bottom: 0.75rem;">THE SPIRIT</h4>
+                    <p style="font-size: 0.875rem; color: var(--body-text); line-height: 1.7; flex: 1;">
+                        <em>"Enterprise is our life. We manufacture quality import-substitute consumer and industrial products. We offer customer satisfaction keeping environmental and human factors in mind. It is this thrust that gives our organization integrity. We treasure our reputation and protect it zealously."</em>
+                    </p>
+                </div>
+
+                <!-- THE WAY -->
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+                    <div style="width: 48px; height: 48px; border-radius: 12px; background: #f0fdf4; color: #16a34a; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem;">
+                        🧭
+                    </div>
+                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--dark); margin-bottom: 0.75rem;">THE WAY</h4>
+                    <p style="font-size: 0.875rem; color: var(--body-text); line-height: 1.7; flex: 1;">
+                        <em>"To a seasoned trekker, the path is never too arduous. We believe in progress, in diversity, and service through entrepreneurship. We are merchants and missionaries, doers and dreamers, entrepreneurs and experts. We are futuristic with emphasis on creative thinking and dynamic activity."</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. VISION, MISSION & VALUES -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-bottom: 5rem;">
+            <div style="background: linear-gradient(135deg, #042f2e 0%, #0f766e 100%); color: #fff; border-radius: var(--radius-xl); padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
+                <div style="font-size: 0.8125rem; font-weight: 800; color: #5eead4; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.08em;">Touch Point's Vision</div>
+                <h3 class="font-corporate" style="font-size: 2rem; color: #fff; margin-bottom: 1rem;">Leading Interior Solution Provider</h3>
+                <p style="font-size: 0.95rem; color: #ccfbf1; line-height: 1.8;">
+                    To be the leading interior solution provider in Bangladesh, achieving our business vision through aggressive growth in market reach, increasing operation scale, international distribution, total customer service, and consistent branding as the most customer-focused, innovative, cost-effective, environmentally responsible, and quality-conscious company.
+                </p>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #7c2d12 0%, #ea580c 100%); color: #fff; border-radius: var(--radius-xl); padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
+                <div style="font-size: 0.8125rem; font-weight: 800; color: #fef08a; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.08em;">Touch Point's Mission</div>
+                <h3 class="font-corporate" style="font-size: 2rem; color: #fff; margin-bottom: 1rem;">Customer Focus &amp; Excellence</h3>
+                <p style="font-size: 0.95rem; color: #ffedd5; line-height: 1.8;">
+                    To be the most consumer-focused, competitive, efficient, innovative, and quality-concerned market-oriented interior manufacturer, sales organization, and distributor in Bangladesh, setting benchmarks in craftsmanship and customer satisfaction.
+                </p>
+            </div>
+        </div>
+
+        <!-- 4. CORE VALUES -->
+        <div style="margin-bottom: 5rem;">
+            <div style="text-align: center; margin-bottom: 2.5rem;">
+                <span style="font-size: 0.8125rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.08em;">Pillars of Character</span>
+                <h3 class="font-corporate" style="font-size: 2.2rem; color: var(--dark); margin-top: 0.25rem;">Our 4 Core Values</h3>
+                <div class="section-divider"></div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.75rem; box-shadow: var(--shadow-sm);">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">🤝</div>
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-bottom: 0.5rem;">1. Customer Focused &amp; Innovative</h4>
+                    <p style="font-size: 0.84rem; color: var(--muted-text); line-height: 1.6;">
+                        Our primary value is fulfillment of customer needs: value for money, multi-tier pricing, free technical consultation, swift delivery, and continuous innovation matching modern global lifestyles.
+                    </p>
+                </div>
+
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.75rem; box-shadow: var(--shadow-sm);">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">⚡</div>
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-bottom: 0.5rem;">2. Competitive &amp; Efficient</h4>
+                    <p style="font-size: 0.84rem; color: var(--muted-text); line-height: 1.6;">
+                        We ensure our competitive edge by offering highest quality products at perceived accessible prices, backed by reliable logistics and responsive after-sales service.
+                    </p>
+                </div>
+
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.75rem; box-shadow: var(--shadow-sm);">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">🌿</div>
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-bottom: 0.5rem;">3. Environmental Stewardship</h4>
+                    <p style="font-size: 0.84rem; color: var(--muted-text); line-height: 1.6;">
+                        Sustainable operation is non-negotiable. We combine responsible wood harvesting with engineered timber substitutes, constantly innovating for zero chemical toxicity.
+                    </p>
+                </div>
+
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.75rem; box-shadow: var(--shadow-sm);">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">⚖️</div>
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-bottom: 0.5rem;">4. Uncompromising Integrity</h4>
+                    <p style="font-size: 0.84rem; color: var(--muted-text); line-height: 1.6;">
+                        We conduct our business adhering to the highest ethical and corporate governance standards. Integrity is our most vital asset in maintaining client trust over decades.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. SISTER CONCERNS ECOSYSTEM -->
+        <div id="sister-concerns-overview" style="margin-bottom: 5rem; scroll-margin-top: 80px;">
+            <div style="text-align: center; margin-bottom: 2.5rem;">
+                <span style="font-size: 0.8125rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.08em;">Group Business Architecture</span>
+                <h3 class="font-corporate" style="font-size: 2.2rem; color: var(--dark); margin-top: 0.25rem;">Touch Point &amp; Our Sister Concerns</h3>
+                <p style="font-size: 0.95rem; color: var(--muted-text); max-width: 650px; margin: 0.5rem auto 0 auto;">
+                    <strong>Touch Point</strong> is the parent flagship project. Under its strategic leadership, two specialized sister concerns expand our footprint into commercial architecture and resort tourism.
+                </p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                <!-- MAIN: TOUCH POINT -->
+                <div style="background: #ffffff; border: 2px solid #ea580c; border-radius: 16px; padding: 2.25rem; box-shadow: var(--shadow-md); position: relative; display: flex; flex-direction: column;">
+                    <div style="position: absolute; top: -12px; left: 24px; background: #ea580c; color: #fff; padding: 2px 12px; border-radius: 9999px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">
+                        Parent &amp; Flagship Brand
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; margin-top: 0.5rem;">
+                        <span style="font-size: 1.8rem; font-weight: 900;"><span style="color: #ea580c;">TOUCH</span> <span style="color: #007f82;">POINT</span></span>
+                    </div>
+
+                    <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--dark); margin-bottom: 0.5rem;">
+                        Luxury Living &amp; Home Furniture
+                    </h4>
+                    <p style="font-size: 0.875rem; color: var(--muted-text); line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                        Handcrafted residential sofas, beds, marble dining sets, wardrobes, and designer center tables. Custom manufactured with seasoned Chittagong Teak, Mahogany, and German soft-close fittings.
+                    </p>
+
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 1rem; margin-bottom: 1.25rem; font-size: 0.8125rem;">
+                        <div style="margin-bottom: 4px;">📍 <strong>HQ:</strong> House 11, Main Road, Block E, Banasree, Dhaka</div>
+                        <div>📞 <strong>Hotline:</strong> +880 1741-452712</div>
+                    </div>
+
+                    <a href="products.html" class="filter-tab-btn active" style="text-align: center; padding: 0.75rem; border-radius: 8px;">
+                        Explore Furniture Catalog →
+                    </a>
+                </div>
+
+                <!-- SISTER CONCERN 1: TOUCH POINT ASSOCIATES -->
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 16px; padding: 2.25rem; box-shadow: var(--shadow-md); position: relative; display: flex; flex-direction: column;">
+                    <div style="position: absolute; top: -12px; left: 24px; background: #0284c7; color: #fff; padding: 2px 12px; border-radius: 9999px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">
+                        Sister Concern #1
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; margin-top: 0.5rem;">
+                        <span style="font-size: 1.5rem; font-weight: 900; color: #0369a1;">TOUCH POINT ASSOCIATES</span>
+                    </div>
+
+                    <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--dark); margin-bottom: 0.5rem;">
+                        Turnkey Commercial &amp; Bank Interiors
+                    </h4>
+                    <p style="font-size: 0.875rem; color: var(--muted-text); line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                        Corporate architectural space planning, bank branch counters, acoustic workstation partitions, filing systems, and civil/HVAC integration for 50+ leading banking institutions and conglomerates.
+                    </p>
+
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 1rem; margin-bottom: 1.25rem; font-size: 0.8125rem;">
+                        <div style="margin-bottom: 4px;">📍 <strong>Studio:</strong> Road 113A, Gulshan-2, Dhaka</div>
+                        <div>📞 <strong>Arch Hotline:</strong> +880 1911-007179</div>
+                    </div>
+
+                    <a href="http://localhost:8080/sister-concerns#touchpoint-associates" class="filter-tab-btn" style="text-align: center; padding: 0.75rem; border-radius: 8px; border-color: #0284c7; color: #0284c7;">
+                        View Associates Portfolio →
+                    </a>
+                </div>
+
+                <!-- SISTER CONCERN 2: NDP TOURS & TRAVELS -->
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 16px; padding: 2.25rem; box-shadow: var(--shadow-md); position: relative; display: flex; flex-direction: column;">
+                    <div style="position: absolute; top: -12px; left: 24px; background: #16a34a; color: #fff; padding: 2px 12px; border-radius: 9999px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">
+                        Sister Concern #2
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; margin-top: 0.5rem;">
+                        <span style="font-size: 1.5rem; font-weight: 900; color: #15803d;">NDP TOURS &amp; TRAVELS</span>
+                    </div>
+
+                    <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--dark); margin-bottom: 0.5rem;">
+                        Saint Martin Tourism &amp; Private Resorts
+                    </h4>
+                    <p style="font-size: 0.875rem; color: var(--muted-text); line-height: 1.6; margin-bottom: 1.25rem; flex: 1;">
+                        Saint Martin tour packages, private beach resort management (Captain House &amp; Honeymoon Beach View), luxury sea cruisers (MV Bay One, Baro Aulia), and sleeper bus ticketing.
+                    </p>
+
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 1rem; margin-bottom: 1.25rem; font-size: 0.8125rem;">
+                        <div style="margin-bottom: 4px;">📍 <strong>Office:</strong> Banasree &amp; Moghbazar, Dhaka</div>
+                        <div>📞 <strong>Tour Desk:</strong> +880 1741-452712 / +880 1911-007179</div>
+                    </div>
+
+                    <a href="http://localhost:8080/sister-concerns#ndp-tours" class="filter-tab-btn" style="text-align: center; padding: 0.75rem; border-radius: 8px; border-color: #16a34a; color: #16a34a;">
+                        View Tour Packages &amp; Resorts →
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. TECHNICAL SPECIFICATIONS & WORKSHOP STANDARDS -->
+        <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: #fff; border-radius: var(--radius-xl); padding: 3rem 2.5rem; margin-bottom: 5rem;">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto 2.5rem auto;">
+                <span style="font-size: 0.8125rem; font-weight: 800; color: var(--gold); text-transform: uppercase; letter-spacing: 0.08em;">Factory Standards</span>
+                <h3 class="font-corporate" style="font-size: 2.2rem; color: #fff; margin-top: 0.25rem;">Technical Specifications of Touch Point Products</h3>
+                <div class="section-divider"></div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <!-- Card 1 -->
+                <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 1.75rem;">
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: #f8fafc; margin-bottom: 1rem; display: flex; align-items: center; gap: 8px;">
+                        <span>🪵</span>
+                        <span>Laminated Board &amp; HDF Specs</span>
+                    </h4>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.84rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 8px;">
+                        <li><strong>• Board Thickness:</strong> 16mm &ndash; 25mm calibrated</li>
+                        <li><strong>• Density:</strong> 650 &ndash; 700 Kg/m&sup3; high compaction</li>
+                        <li><strong>• Heat Resistance:</strong> Withstands up to 180&deg;C without stain</li>
+                        <li><strong>• Surface Integrity:</strong> Hot cigarette &amp; superheated oil tested</li>
+                        <li><strong>• Protection:</strong> Water resistant, scratch proof &amp; woodworm proof</li>
+                        <li><strong>• Flexibility:</strong> Complete knock-down &amp; space setting modular design</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 1.75rem;">
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: #f8fafc; margin-bottom: 1rem; display: flex; align-items: center; gap: 8px;">
+                        <span>🪑</span>
+                        <span>Ergonomic Swivel &amp; Fixed Chairs</span>
+                    </h4>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.84rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 8px;">
+                        <li><strong>• Cushioning:</strong> High-density molded polyurethane foam</li>
+                        <li><strong>• Upholstery:</strong> Premium imported breathable fabrics &amp; PU leather</li>
+                        <li><strong>• Gas-Lift:</strong> Heavy-duty Class 4 explosion-proof cylinder</li>
+                        <li><strong>• Base:</strong> PP arm rest &amp; nylon twin cluster casters</li>
+                        <li><strong>• Frame Structure:</strong> Chemically de-rusted mild steel</li>
+                        <li><strong>• Coating:</strong> High-bake electrostatic stoving powder paint</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 1.75rem;">
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: #f8fafc; margin-bottom: 1rem; display: flex; align-items: center; gap: 8px;">
+                        <span>🏭</span>
+                        <span>Solid Seasoned Hardwood</span>
+                    </h4>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.84rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 8px;">
+                        <li><strong>• Timber Selection:</strong> Burmese &amp; Chittagong Teak, Sil Karoi, Mahogany</li>
+                        <li><strong>• Pre-Treatment:</strong> Stored in covered sheds away from sun/rain</li>
+                        <li><strong>• Kiln Drying:</strong> Seasoned to exact 12% &plusmn; 2% in modern kilns</li>
+                        <li><strong>• Precision Carpentry:</strong> Executed with German CNC &amp; router bits</li>
+                        <li><strong>• Quality Control:</strong> Hand sorted by master artisans for flawless grain</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. EXECUTIVE LEADERSHIP TEAM (From Docs) -->
+        <div id="leadership" style="margin-bottom: 5rem; scroll-margin-top: 80px;">
+            <div style="text-align: center; margin-bottom: 2.5rem;">
+                <span style="font-size: 0.8125rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.08em;">Our Leadership</span>
+                <h3 class="font-corporate" style="font-size: 2.2rem; color: var(--dark); margin-top: 0.25rem;">The Executive Management Team</h3>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Proprietor Feature Card -->
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 2.5rem; box-shadow: var(--shadow-md); margin-bottom: 2.5rem;">
+                <div style="display: grid; grid-template-columns: auto 1fr; gap: 2.5rem; align-items: center;">
+                    <div style="width: 140px; height: 160px; border-radius: 12px; overflow: hidden; border: 3px solid #ea580c; box-shadow: var(--shadow-md); flex-shrink: 0; background: #f8fafc; display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/touchpoint-logo.png" alt="Md. Ariful Islam" style="width: 80%; height: auto; object-fit: contain;" />
+                    </div>
+
+                    <div>
+                        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 0.5rem;">
+                            <div>
+                                <h4 style="font-size: 1.6rem; font-weight: 800; color: var(--dark); margin: 0;">Md. Ariful Islam</h4>
+                                <div style="font-size: 0.9rem; font-weight: 700; color: #ea580c;">Founder &amp; Proprietor &bull; Head of Operation, Touch Point</div>
+                            </div>
+                            <div style="font-size: 0.8125rem; color: var(--muted-text); font-weight: 600;">
+                                📍 Banasree, Dhaka &bull; 📞 +880 1741-452712
+                            </div>
+                        </div>
+
+                        <p style="font-size: 0.9rem; color: var(--body-text); line-height: 1.7; margin-bottom: 1rem;">
+                            Mr. Ariful Islam brings over 20 years of decorated leadership across Bangladesh's top manufacturing and consumer furniture industries. Having served in senior leadership roles at <strong>PartexStar Group (PFIL)</strong>, <strong>Studio45 (Adcom Group)</strong>, and <strong>Otobi Ltd</strong>, he established Touch Point to deliver world-class vertical integration, corporate interior mastery, and client-centric value.
+                        </p>
+
+                        <div style="display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.8125rem; color: #475569;">
+                            <span style="background: #f1f5f9; padding: 4px 10px; border-radius: 6px;">🎓 Masters of Social Science (University of Titumir Govt. College, 2004)</span>
+                            <span style="background: #f1f5f9; padding: 4px 10px; border-radius: 6px;">📐 AutoCAD &amp; 3D Designing</span>
+                            <span style="background: #f1f5f9; padding: 4px 10px; border-radius: 6px;">⚙️ Supply Chain &amp; Project Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Department Leaders -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+                <!-- Leader 2 -->
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 0.75rem;">
+                        <div style="width: 48px; height: 48px; border-radius: 50%; background: #e0f2fe; color: #0284c7; display: flex; align-items: center; justify-content: center; font-weight: 800;">
+                            MM
+                        </div>
+                        <div>
+                            <h5 style="font-size: 1.05rem; font-weight: 800; color: var(--dark); margin: 0;">Arch. Mir Mamun</h5>
+                            <span style="font-size: 0.75rem; color: #0284c7; font-weight: 700;">Chief Architect &bull; Gulshan Studio</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.8125rem; color: var(--muted-text); line-height: 1.6; margin-bottom: 0.75rem;">
+                        Directs space planning, architectural drafting, 3D renderings, and luxury aesthetic styling for high-spec commercial and residential clients.
+                    </p>
+                    <div style="font-size: 0.75rem; color: #64748b; font-weight: 600;">📞 +880 1911-007179</div>
+                </div>
+
+                <!-- Leader 3 -->
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 0.75rem;">
+                        <div style="width: 48px; height: 48px; border-radius: 50%; background: #f0fdf4; color: #16a34a; display: flex; align-items: center; justify-content: center; font-weight: 800;">
+                            RA
+                        </div>
+                        <div>
+                            <h5 style="font-size: 1.05rem; font-weight: 800; color: var(--dark); margin: 0;">Engr. Md. Rafiul Alam, B.Sc.</h5>
+                            <span style="font-size: 0.75rem; color: #16a34a; font-weight: 700;">Project &amp; Civil Engineering Head</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.8125rem; color: var(--muted-text); line-height: 1.6; margin-bottom: 0.75rem;">
+                        B.Sc in Civil Engineering (Presidency Univ) with extensive engineering tenure across Navana, Otobi, and IDC. Manages turnkey structural execution.
+                    </p>
+                    <div style="font-size: 0.75rem; color: #64748b; font-weight: 600;">📞 +880 1911-007179</div>
+                </div>
+
+                <!-- Leader 4 -->
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 0.75rem;">
+                        <div style="width: 48px; height: 48px; border-radius: 50%; background: #fef3c7; color: #d97706; display: flex; align-items: center; justify-content: center; font-weight: 800;">
+                            TI
+                        </div>
+                        <div>
+                            <h5 style="font-size: 1.05rem; font-weight: 800; color: var(--dark); margin: 0;">Mr. Tarikul Islam, C.A</h5>
+                            <span style="font-size: 0.75rem; color: #d97706; font-weight: 700;">Account &amp; Finance Lead</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.8125rem; color: var(--muted-text); line-height: 1.6; margin-bottom: 0.75rem;">
+                        Manages group audit, capital expenditure, budget forecasting, and corporate commercial contracts across Touch Point's 3 divisions.
+                    </p>
+                    <div style="font-size: 0.75rem; color: #64748b; font-weight: 600;">📞 +880 1711-347356</div>
+                </div>
+
+                <!-- Leader 5 -->
+                <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 0.75rem;">
+                        <div style="width: 48px; height: 48px; border-radius: 50%; background: #f3e8ff; color: #9333ea; display: flex; align-items: center; justify-content: center; font-weight: 800;">
+                            RA
+                        </div>
+                        <div>
+                            <h5 style="font-size: 1.05rem; font-weight: 800; color: var(--dark); margin: 0;">Mr. Reza Ahmed</h5>
+                            <span style="font-size: 0.75rem; color: #9333ea; font-weight: 700;">Supervisor, Project &amp; Sales</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.8125rem; color: var(--muted-text); line-height: 1.6; margin-bottom: 0.75rem;">
+                        Oversees on-site installation, carpenter teams, client relationship management, and commercial delivery fulfillment.
+                    </p>
+                    <div style="font-size: 0.75rem; color: #64748b; font-weight: 600;">📞 +880 1712-593402</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. CORPORATE CLIENT STRIP -->
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 3rem 2.5rem; margin-bottom: 5rem;">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto 2rem auto;">
+                <span style="font-size: 0.8125rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.08em;">Proof of Trust</span>
+                <h3 class="font-corporate" style="font-size: 2.2rem; color: var(--dark); margin-top: 0.25rem;">Our Prestigious Corporate &amp; Banking Clients</h3>
+                <p style="font-size: 0.9rem; color: var(--muted-text);">Selected institutions furnished and designed by Touch Point and Touch Point Associates</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; text-align: center;">
+                                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Mutual Trust Bank (MTB)</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Banking</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Pubali Bank Limited</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Banking</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Standard Bank Limited</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Banking</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Bank Asia Limited</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Banking</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">BRAC Bank</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Banking</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Islami Bank Bangladesh</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Banking</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Mercantile Bank</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Banking</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Grameenphone</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Telecom</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Banglalink</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Telecom</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Robi Axiata</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Telecom</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Airtel Bangladesh</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Telecom</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">BRAC</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">NGO &amp; Conglomerate</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Square Hospitals Ltd</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Healthcare</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Apollo Hospitals (Evercare)</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Healthcare</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Labaid Specialized Hospital</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Healthcare</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Ibn Sina Hospital</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Healthcare</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Modern Hospital</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Healthcare</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Concord Group</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Real Estate</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Shanta Holdings</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Real Estate</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Asset Developments</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Real Estate</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">DBL Group</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Textiles &amp; Ceramics</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Silver Line Group (SLG)</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Textiles</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">ACME Garments &amp; Pharma</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Corporate</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Noman Group</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Textiles</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Multifabs Limited</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Apparel</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">The Daily Star</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Media</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Prothom Alo</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Media</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Adcomm Graphics</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Media &amp; Advertising</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">GTZ (German Dev.)</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">International Agency</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">BGCCI (German Chamber)</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Chamber of Commerce</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">aamar taka</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Fintech</div>
+                    </div>
+                                    <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px; box-shadow: var(--shadow-sm); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='none';">
+                        <div style="font-size: 0.84rem; font-weight: 800; color: #1e293b;">Recess Renaissance</div>
+                        <div style="font-size: 0.68rem; color: var(--muted-text); text-transform: uppercase; margin-top: 2px;">Commercial</div>
+                    </div>
+                            </div>
+        </div>
+
+        <!-- 9. OFFICIAL ACCREDITATIONS & LICENSING -->
+        <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 2.5rem; margin-bottom: 5rem;">
+            <div style="text-align: center; margin-bottom: 1.5rem;">
+                <span style="font-size: 0.75rem; font-weight: 800; color: var(--muted-text); text-transform: uppercase; letter-spacing: 0.1em;">Legal &amp; Regulatory Compliance</span>
+                <h4 style="font-size: 1.4rem; font-weight: 800; color: var(--dark); margin-top: 4px;">Registered &amp; Fully Compliant Corporate Enterprise</h4>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 10px 18px; border-radius: 8px; font-size: 0.8125rem; font-weight: 700; color: #334155; display: flex; align-items: center; gap: 8px;">
+                    <span>📜</span>
+                    <span>1. Government E-Trade License</span>
+                </div>
+                <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 10px 18px; border-radius: 8px; font-size: 0.8125rem; font-weight: 700; color: #334155; display: flex; align-items: center; gap: 8px;">
+                    <span>🏛️</span>
+                    <span>2. Joint-Stock Firm Registration</span>
+                </div>
+                <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 10px 18px; border-radius: 8px; font-size: 0.8125rem; font-weight: 700; color: #334155; display: flex; align-items: center; gap: 8px;">
+                    <span>💼</span>
+                    <span>3. Tax Identification Certificate (TIN)</span>
+                </div>
+                <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 10px 18px; border-radius: 8px; font-size: 0.8125rem; font-weight: 700; color: #334155; display: flex; align-items: center; gap: 8px;">
+                    <span>🧾</span>
+                    <span>4. BIN VAT Certification</span>
+                </div>
+                <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 10px 18px; border-radius: 8px; font-size: 0.8125rem; font-weight: 700; color: #334155; display: flex; align-items: center; gap: 8px;">
+                    <span>🌐</span>
+                    <span>5. MCCI Chamber Certification</span>
+                </div>
+                <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 10px 18px; border-radius: 8px; font-size: 0.8125rem; font-weight: 700; color: #334155; display: flex; align-items: center; gap: 8px;">
+                    <span>🏦</span>
+                    <span>6. Verified Bank Solvency &amp; Statements</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10. SHOWROOM & FACTORY LOCATIONS SUMMARY -->
+        <div style="background: linear-gradient(135deg, #7a1315 0%, #a21c1f 100%); color: #fff; border-radius: var(--radius-xl); padding: 3.5rem 2.5rem; text-align: center; box-shadow: var(--shadow-xl);">
+            <h3 class="font-corporate" style="font-size: 2.2rem; color: #fff; margin-bottom: 0.75rem;">Visit Our Studios &amp; Experience Touch Point</h3>
+            <p style="max-width: 650px; margin: 0 auto 2rem auto; font-size: 0.95rem; color: #fee2e2; line-height: 1.7;">
+                We invite homeowners, corporate procurement teams, architects, and travelers to visit our Banasree Corporate HQ, Gulshan Design Studio, or Satarkul Factory to explore materials, discuss custom floorplans, or plan an upcoming holiday.
+            </p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                <a href="showrooms.html" class="filter-tab-btn active" style="background: #fff; color: var(--primary); padding: 0.85rem 2rem; border-color: #fff; font-weight: 800;">
+                    View All Showroom Locations
+                </a>
+                <button data-open-consultation class="filter-tab-btn" style="border-color: rgba(255,255,255,0.4); color: #fff; padding: 0.85rem 2rem; font-weight: 700;">
+                    Book Free Consultation
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    </main>
+
+    <!-- 3. SLIDE-OVER CART DRAWER -->
+    <div id="cartBackdrop" class="cart-drawer-backdrop"></div>
+    <aside id="cartDrawer" class="cart-drawer">
+        <div class="cart-drawer-header">
+            <div class="cart-drawer-title">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                <span>Shopping Cart</span>
+            </div>
+            <button class="cart-close-btn" data-cart-close aria-label="Close cart">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+
+        <div id="cartProgressBox" class="shipping-progress-box">
+            <div id="shippingProgressText" class="shipping-progress-text">
+                Add ৳50,000 for <strong>FREE Doorstep Delivery</strong>
+            </div>
+            <div class="shipping-progress-bar">
+                <div id="shippingProgressFill" class="shipping-progress-fill" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <div id="cartItemsList" class="cart-items-list">
+            <!-- Populated dynamically via JS or server rendered -->
+        </div>
+
+        <div id="cartDrawerFooter" class="cart-drawer-footer">
+            <div class="cart-summary-line">
+                <span>Subtotal</span>
+                <span id="cartSubtotalDisplay" style="font-weight: 700;">৳0</span>
+            </div>
+            <div class="cart-summary-line">
+                <span>Estimated Shipping</span>
+                <span id="cartShippingDisplay" style="color: #16a34a; font-weight: 600;">FREE</span>
+            </div>
+            <div class="cart-summary-line cart-summary-total">
+                <span>Total Amount</span>
+                <span id="cartTotalDisplay" style="color: var(--primary);">৳0</span>
+            </div>
+            <a href="http://localhost:8080/checkout" class="cart-checkout-btn">
+                <span>Proceed To Checkout</span>
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+            <div style="text-align: center; margin-top: 0.75rem; font-size: 0.75rem; color: #64748b;">
+                🔒 100% Safe &amp; Encrypted Checkout
+            </div>
+        </div>
+    </aside>
+
+    <!-- 4. QUICK VIEW MODAL -->
+    <div id="quickViewModal" class="modal-backdrop">
+        <div class="modal-dialog">
+            <button id="quickViewClose" class="modal-close-icon" aria-label="Close modal">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div id="quickViewContent"></div>
+        </div>
+    </div>
+
+    <!-- 5. CONSULTATION MODAL -->
+    <div id="consultationModal" class="modal-backdrop">
+        <div class="modal-dialog" style="max-width: 580px;">
+            <button id="consultationClose" class="modal-close-icon" aria-label="Close modal">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div style="padding: 2.25rem;">
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <img src="assets/images/touchpoint-logo.png" alt="Touch Point Logo" style="height: 42px; width: auto; object-fit: contain; margin-bottom: 0.5rem;" />
+                    <div style="font-size: 0.8125rem; font-weight: 800; text-transform: uppercase;"><span style="color: #ea580c;">Touch</span> <span style="color: #007f82;">Point</span> Design Studio</div>
+                    <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--dark); margin-top: 0.25rem;">Book Free Interior Consultation</h3>
+                    <p style="font-size: 0.875rem; color: var(--muted-text); margin-top: 0.5rem;">Our expert architects and furniture consultants will help design your dream space.</p>
+                </div>
+                <form id="consultationForm" style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div>
+                        <label style="font-size: 0.8125rem; font-weight: 700; display: block; margin-bottom: 4px;">Full Name *</label>
+                        <input type="text" name="name" required class="search-input" style="border-radius: 8px; height: 42px;" placeholder="e.g. Tanvir Ahmed" />
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div>
+                            <label style="font-size: 0.8125rem; font-weight: 700; display: block; margin-bottom: 4px;">Phone Number *</label>
+                            <input type="tel" name="phone" required class="search-input" style="border-radius: 8px; height: 42px;" placeholder="+880 18XXXXXXXX" />
+                        </div>
+                        <div>
+                            <label style="font-size: 0.8125rem; font-weight: 700; display: block; margin-bottom: 4px;">Service / Inquiry Type</label>
+                            <select name="room_type" class="search-input" style="border-radius: 8px; height: 42px;">
+                                <option value="Living Room">Living Room (Home Furniture)</option>
+                                <option value="Master Bedroom">Master Bedroom</option>
+                                <option value="Dining Room">Dining Room</option>
+                                <option value="Full Duplex / Apartment">Full Duplex / Apartment</option>
+                                <option value="Corporate Office & Workstations">Corporate Office &amp; Workstations (Touch Point Associates)</option>
+                                <option value="Bank Branch Turnkey Fit-out">Bank Branch Turnkey Fit-out (Touch Point Associates)</option>
+                                <option value="Saint Martin Tour Package">Saint Martin Tour Package (NDP Tours &amp; Travels)</option>
+                                <option value="Island Resort Booking">Island Resort Booking - Captain House / Honeymoon View (NDP)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label style="font-size: 0.8125rem; font-weight: 700; display: block; margin-bottom: 4px;">Notes / Custom Wood Requirements</label>
+                        <textarea name="notes" rows="3" class="search-input" style="border-radius: 8px; height: auto; padding: 10px;" placeholder="Tell us your space dimensions or style preference..."></textarea>
+                    </div>
+                    <button type="submit" class="cart-checkout-btn" style="margin-top: 0.5rem;">
+                        Confirm Free Booking
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/8801741452712?text=Hello%20Touch%20Point!%20I%20would%20like%20to%20inquire%20about%20your%20premium%20collection." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="Chat on WhatsApp (+880 1741-452712)">
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.768-5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+    </a>
+
+    <!-- 7. BACK TO TOP BUTTON -->
+    <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path></svg>
+    </button>
+
+    <!-- 8. FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main-grid">
+                <!-- Col 1: Brand & Contacts -->
+                <div>
+                    <div style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 12px;">
+                        <div style="background: #ffffff; border-radius: 12px; padding: 6px 8px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,0.2);">
+                            <img src="assets/images/touchpoint-logo.png" alt="Touch Point Logo" style="height: 48px; width: auto; object-fit: contain;" />
+                        </div>
+                        <div>
+                            <div style="font-size: 1.7rem; font-weight: 800; letter-spacing: -0.5px; line-height: 1.1;">
+                                <span style="color: #ff9b2e;">TOUCH</span> <span style="color: #2dd4bf;">POINT</span>
+                            </div>
+                            <span style="font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: #f8fafc; font-weight: 600;">Luxury Furniture &amp; Interior</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <svg width="14" height="14" fill="#fff" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <p style="line-height: 1.5;">House- 11, Main Road, Block - E, Banasree, Dhaka -1219, Bangladesh</p>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <svg width="14" height="14" fill="#fff" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        </div>
+                        <a href="tel:+8801741452712" style="font-weight: 700; color: #fff;">+880 1741-452712</a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon" style="background: #25d366;">
+                            <svg width="15" height="15" fill="#fff" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.768-5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                        </div>
+                        <a href="https://wa.me/8801741452712?text=Hello%20Touch%20Point!%20I%20would%20like%20to%20inquire%20about%20furniture." target="_blank" rel="noopener noreferrer" style="color: #4ade80; font-weight: 700; text-decoration: none;">WhatsApp: +880 1741-452712</a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <svg width="14" height="14" fill="#fff" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        </div>
+                        <a href="mailto:info@touchpoint.com.bd" style="color: #fff; text-decoration: underline;">info@touchpoint.com.bd</a>
+                    </div>
+
+                    <!-- Connect On Facebook & WhatsApp -->
+                    <div style="margin-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1rem;">
+                        <div style="font-size: 0.8125rem; font-weight: 700; color: #f8fafc; text-transform: uppercase; margin-bottom: 0.75rem; letter-spacing: 0.05em; display: flex; align-items: center; gap: 6px;">
+                            <span>Follow Us On Facebook &amp; WhatsApp:</span>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <a href="https://www.facebook.com/share/1EvBqk6phj/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 10px; color: #e2e8f0; font-size: 0.875rem; background: rgba(255,255,255,0.06); padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;" onmouseover="this.style.background='rgba(59,130,246,0.2)'; this.style.borderColor='#3b82f6';" onmouseout="this.style.background='rgba(255,255,255,0.06)'; this.style.borderColor='rgba(255,255,255,0.1)';">
+                                <div class="footer-contact-icon" style="width: 26px; height: 26px; background: #1877f2; flex-shrink: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="14" height="14" fill="#fff" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                </div>
+                                <span style="font-weight: 600;">Touch Point Facebook Page (Official) ↗</span>
+                            </a>
+                            <a href="https://www.facebook.com/share/1CEbw9XcNt/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 10px; color: #e2e8f0; font-size: 0.875rem; background: rgba(255,255,255,0.06); padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;" onmouseover="this.style.background='rgba(59,130,246,0.2)'; this.style.borderColor='#3b82f6';" onmouseout="this.style.background='rgba(255,255,255,0.06)'; this.style.borderColor='rgba(255,255,255,0.1)';">
+                                <div class="footer-contact-icon" style="width: 26px; height: 26px; background: #1877f2; flex-shrink: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="14" height="14" fill="#fff" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                </div>
+                                <span style="font-weight: 600;">Touch Point Furniture Gallery ↗</span>
+                            </a>
+                            <a href="https://www.facebook.com/share/1C1rc91JsK/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 10px; color: #e2e8f0; font-size: 0.875rem; background: rgba(255,255,255,0.06); padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;" onmouseover="this.style.background='rgba(59,130,246,0.2)'; this.style.borderColor='#3b82f6';" onmouseout="this.style.background='rgba(255,255,255,0.06)'; this.style.borderColor='rgba(255,255,255,0.1)';">
+                                <div class="footer-contact-icon" style="width: 26px; height: 26px; background: #1877f2; flex-shrink: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="14" height="14" fill="#fff" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                </div>
+                                <span style="font-weight: 600;">Touch Point Customer Showcase ↗</span>
+                            </a>
+                            <a href="https://wa.me/8801741452712?text=Hello%20Touch%20Point!%20I%20would%20like%20to%20inquire%20about%20furniture." target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 10px; color: #e2e8f0; font-size: 0.875rem; background: rgba(37,211,102,0.12); padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(37,211,102,0.3); transition: all 0.2s;" onmouseover="this.style.background='rgba(37,211,102,0.25)';" onmouseout="this.style.background='rgba(37,211,102,0.12)';">
+                                <div class="footer-contact-icon" style="width: 26px; height: 26px; background: #25d366; flex-shrink: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="14" height="14" fill="#fff" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.768-5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                </div>
+                                <span style="font-weight: 700; color: #4ade80;">Chat on WhatsApp (+880 1741-452712) ↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 2: The Company -->
+                <div>
+                    <h3 class="footer-col-title">The Company</h3>
+                    <ul class="footer-links-list">
+                        <li class="footer-link-item"><a href="about.html">About Touch Point</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/about#heritage">Heritage &amp; Factory (Since 2011)</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/about#leadership">Executive Management</a></li>
+                        <li class="footer-link-item"><a href="showrooms.html">Corporate HQ &amp; Factory Studios</a></li>
+                        <li class="footer-link-item"><a href="products.html">Full Furniture Catalog</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/privacy">Privacy Policy</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/return">Return &amp; Replacement</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Sister Concerns -->
+                <div>
+                    <h3 class="footer-col-title">Sister Concerns</h3>
+                    <ul class="footer-links-list">
+                        <li class="footer-link-item"><a href="sister-concerns.html" style="color: #fef08a; font-weight: 700;">Group Overview ↗</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/sister-concerns#touchpoint-associates">🏛️ Touch Point Associates</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/sister-concerns#touchpoint-associates">Commercial &amp; Bank Turnkey Fitouts</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/sister-concerns#ndp-tours">🏝️ NDP Tours &amp; Travels</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/sister-concerns#ndp-tours">Captain House Resort (Saint Martin)</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/sister-concerns#ndp-tours">Honeymoon Beach View Resort</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/sister-concerns#ndp-tours">Saint Martin Cruise Tickets (MV Bay One)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Corporate Facilities & Contacts -->
+                <div>
+                    <h3 class="footer-col-title">Our Facilities</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.84rem; color: #cbd5e1;">
+                        <div>
+                            <strong style="color: #fff; display: block;">📍 Corporate Headquarters:</strong>
+                            House # 11, Main Road, Block - E (Near Farazy Hospital), Banasree, Dhaka - 1219
+                        </div>
+                        <div>
+                            <strong style="color: #fff; display: block;">📐 Gulshan Architecture Studio:</strong>
+                            House # 16, Road # 113A, 5th Fl (A-1), Gulshan-2, Dhaka
+                        </div>
+                        <div>
+                            <strong style="color: #fff; display: block;">🌴 Moghbazar Sales Office:</strong>
+                            8 Gulfresha Plaza (1st Fl), Bara Moghbazar, Ramna, Dhaka
+                        </div>
+                        <div>
+                            <strong style="color: #fff; display: block;">🏭 Manufacturing Factory:</strong>
+                            Satarkul Road, Pool Road, Satarkul, Badda, Dhaka
+                        </div>
+                        <div style="padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.15);">
+                            <span style="color: #facc15; font-weight: 700;">Emails:</span>
+                            <div style="color: #fff;">touchpoint.mtp@gmail.com</div>
+                            <div style="color: #fff;">tpassociates23@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright & Developed By Bar -->
+            <div class="footer-bottom-bar">
+                <div>© 2026 Touch Point. All rights reserved.</div>
+                <div>
+                    Developed By <a href="https://smartsoft.bd/" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s;" onmouseover="this.style.color='#93c5fd'" onmouseout="this.style.color='#60a5fa'">Smart Soft Limited</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/app.js"></script>
+    </body>
+</html>

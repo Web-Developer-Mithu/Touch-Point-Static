@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="Ciw2E24M3jSgvhm1FjR21MUUfpymfgqky5yYnq2W">
+    <meta name="theme-color" content="#7A1315">
+    
+    <title>Furniture Collection | Touch Point Bangladesh</title>
+    <meta name="description" content="Explore handcrafted solid teakwood sofas, beds, marble dining tables, and executive desks by Touch Point.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="assets/images/touchpoint-logo.png">
+    <link rel="apple-touch-icon" href="assets/images/touchpoint-logo.png">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+<body>
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="container announcement-inner">
+            <div class="announcement-ticker">
+                <span style="background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.7rem; text-transform: uppercase;">SPECIAL OFFER</span>
+                <span>Free Home Delivery across Bangladesh on orders over ৳50,000 | 10-Year Solid Wood Warranty</span>
+            </div>
+            <div class="announcement-links">
+                <a href="tel:+8801741452712">
+                    <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                    <span>+880 1741-452712</span>
+                </a>
+                <a href="tel:+8801911007179" style="display: none; @media(min-width: 768px){ display: inline-flex; }">
+                    <span>/ +880 1911-007179</span>
+                </a>
+                <span style="opacity: 0.4;">|</span>
+                <a href="showrooms.html">
+                    <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    <span>Dhaka Studios &amp; Factory</span>
+                </a>
+                <span style="opacity: 0.4;">|</span>
+                <span style="font-weight: 700; color: #fef08a;">BDT (৳)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. STICKY MAIN HEADER -->
+    <header class="header-sticky">
+        <div class="container">
+            <div class="header-main">
+                <!-- Brand Logo (Touch Point) -->
+                <a href="index.html" class="brand-logo" title="Touch Point" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                    <img src="assets/images/touchpoint-logo.png" alt="Touch Point Logo" style="height: 48px; width: auto; object-fit: contain;" />
+                    <div style="display: flex; flex-direction: column; line-height: 1.1;">
+                        <span style="font-size: 1.45rem; font-weight: 800; letter-spacing: -0.5px;"><span style="color: #ea580c;">TOUCH</span> <span style="color: #007f82;">POINT</span></span>
+                        <span style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #007f82;">Luxury Furniture</span>
+                    </div>
+                </a>
+
+                <!-- Live Auto-Search Bar -->
+                <div class="header-search">
+                    <form action="#" onsubmit="event.preventDefault();" method="GET" class="search-input-wrapper">
+                        <input type="text" name="search" id="globalSearchInput" class="search-input" placeholder="Search sofas, beds, teak dining sets, office desks..." autocomplete="off" />
+                        <button type="submit" class="search-submit-btn" aria-label="Search">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </button>
+                    </form>
+                    <div id="searchDropdown" class="search-dropdown"></div>
+                </div>
+
+                <!-- Header Actions (Wishlist, Consultation, Cart) -->
+                <div class="header-actions">
+                    <!-- Free Interior Consultation Button -->
+                    <button class="filter-tab-btn btn-sheen pulse-glow" data-open-consultation style="display: none; @media(min-width: 992px){ display: flex; } align-items: center; gap: 6px; font-size: 0.8125rem; font-weight: 700; border-radius: 8px; border-color: var(--gold); color: #92400e; background: #fffbeb; box-shadow: 0 4px 12px rgba(217, 119, 6, 0.15);">
+                        <span class="animate-float">🎨</span>
+                        <span>Free Consultation</span>
+                    </button>
+
+                    <!-- Wishlist -->
+                    <a href="http://localhost:8080/products?filter=trending" class="header-action-btn" title="Saved Wishlist">
+                        <div class="action-icon-wrap">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                            <span class="action-badge wishlist-count-badge" style="display: none;">0</span>
+                        </div>
+                    </a>
+
+                    <!-- Shopping Cart Trigger -->
+                                        <button class="header-action-btn" data-cart-open title="View Shopping Cart">
+                        <div class="action-icon-wrap" style="background-color: #fdf2f2; color: var(--primary);">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                            <span class="action-badge cart-count-badge" style="display:none;">0</span>
+                        </div>
+                        <div class="action-details" style="display: none; @media(min-width: 768px){ display: flex; }">
+                            <span class="action-sub">My Cart</span>
+                            <span class="action-amount" id="headerCartTotal">৳0</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secondary Category Navigation Bar -->
+        <nav class="header-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link ">Home</a></li>
+                    <li><a href="about.html" class="nav-link ">About Touch Point</a></li>
+                    <li><a href="http://localhost:8080/products?category=living-room" class="nav-link">Living Room</a></li>
+                    <li><a href="http://localhost:8080/products?category=bedroom" class="nav-link">Bedroom</a></li>
+                    <li><a href="http://localhost:8080/products?category=dining-room" class="nav-link">Dining Room</a></li>
+                    <li><a href="http://localhost:8080/products?category=office-furniture" class="nav-link">Office Furniture</a></li>
+                    <li><a href="http://localhost:8080/products?category=wardrobes-storage" class="nav-link">Wardrobes</a></li>
+                    <li><a href="http://localhost:8080/products?category=interior-solutions" class="nav-link">Interior Solutions</a></li>
+                    
+                    <!-- Sister Concerns Dropdown -->
+                    <li class="nav-item-dropdown">
+                        <a href="sister-concerns.html" class="nav-link " style="color: #ea580c; font-weight: 700;">
+                            <span>Sister Concerns</span>
+                            <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </a>
+                        <div class="nav-dropdown-menu">
+                            <a href="sister-concerns.html" class="nav-dropdown-item">
+                                <div style="font-weight: 800; color: var(--dark); font-size: 0.875rem;">Touch Point Group Ventures</div>
+                                <div style="font-size: 0.72rem; color: var(--muted-text);">All Sister Concerns Overview</div>
+                            </a>
+                            <a href="http://localhost:8080/sister-concerns#touchpoint-associates" class="nav-dropdown-item">
+                                <div style="font-weight: 800; color: #0284c7; font-size: 0.875rem;">🏛️ Touch Point Associates</div>
+                                <div style="font-size: 0.72rem; color: var(--muted-text);">Architectural Commercial &amp; Bank Turnkey Fit-outs</div>
+                            </a>
+                            <a href="http://localhost:8080/sister-concerns#ndp-tours" class="nav-dropdown-item">
+                                <div style="font-weight: 800; color: #16a34a; font-size: 0.875rem;">🏝️ NDP Tours &amp; Travels</div>
+                                <div style="font-size: 0.72rem; color: var(--muted-text);">Saint Martin Tour Packages, Sea Cruisers &amp; Resorts</div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="http://localhost:8080/products?filter=bestseller" class="nav-link" style="color: var(--primary);">
+                            <span>Best Sellers</span>
+                            <span class="nav-tag-badge">HOT</span>
+                        </a>
+                    </li>
+                    <li><a href="showrooms.html" class="nav-link ">Offices &amp; Factory</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN BODY CONTENT -->
+    <main>
+        
+    <!-- Breadcrumb & Header Banner -->
+    <div style="background: #0f172a; color: #ffffff; padding: 3.5rem 0; border-bottom: 1px solid var(--border-color); position: relative; overflow: hidden;">
+        <div class="aurora-orb-1" style="position: absolute; top: -60px; right: -60px; width: 360px; height: 360px; border-radius: 50%; background: radial-gradient(circle, rgba(234, 88, 12, 0.18) 0%, transparent 70%); filter: blur(50px); pointer-events: none;"></div>
+        <div class="aurora-orb-2" style="position: absolute; bottom: -60px; left: 10%; width: 320px; height: 320px; border-radius: 50%; background: radial-gradient(circle, rgba(2, 132, 199, 0.16) 0%, transparent 70%); filter: blur(50px); pointer-events: none;"></div>
+
+        <div class="container" style="position: relative; z-index: 2;">
+            <div style="font-size: 0.8125rem; color: #94a3b8; margin-bottom: 0.5rem;">
+                <a href="index.html" style="color: #cbd5e1;">Home</a> &gt; 
+                <span style="color: #ffffff;">All Furniture Collections</span>
+            </div>
+            <h1 class="font-corporate reveal-left" style="font-size: 2.4rem; color: #ffffff; margin-bottom: 0.5rem;">
+                Handcrafted Furniture Catalog
+            </h1>
+            <p class="reveal-left delay-1" style="font-size: 0.9375rem; color: #cbd5e1; max-width: 650px;">
+                Discover heirloom solid teakwood, Italian marble tops, and ergonomic comfort engineered for Bangladeshi modern apartments and duplexes.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Catalog Grid with Filter Sidebar -->
+    <div class="container section-padding">
+        <div style="display: grid; grid-template-columns: 280px 1fr; gap: 2.5rem; align-items: start;">
+            
+            <!-- Filter Sidebar -->
+            <aside style="background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; position: sticky; top: 90px; box-shadow: var(--shadow-sm);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border-color);">
+                    <h3 style="font-size: 1.1rem; font-weight: 800; color: var(--dark);">Filter Collections</h3>
+                    <a href="products.html" style="font-size: 0.75rem; color: var(--primary); font-weight: 700;">Reset All</a>
+                </div>
+
+                <form action="#" onsubmit="event.preventDefault();" method="GET">
+                    
+                    <!-- Categories -->
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; color: var(--muted-text); margin-bottom: 0.75rem;">Categories</h4>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <a href="products.html" 
+                               style="font-size: 0.875rem; font-weight: 700; color: var(--primary);">
+                                • All Categories (12)
+                            </a>
+                                                            <a href="http://localhost:8080/products?category=living-room" 
+                                   style="font-size: 0.875rem; font-weight: 500; color: var(--body-text); display: flex; justify-content: space-between;">
+                                    <span>• Living Room</span>
+                                    <span style="color: var(--muted-text); font-size: 0.75rem;">(2)</span>
+                                </a>
+                                                            <a href="http://localhost:8080/products?category=bedroom" 
+                                   style="font-size: 0.875rem; font-weight: 500; color: var(--body-text); display: flex; justify-content: space-between;">
+                                    <span>• Bedroom</span>
+                                    <span style="color: var(--muted-text); font-size: 0.75rem;">(2)</span>
+                                </a>
+                                                            <a href="http://localhost:8080/products?category=dining-room" 
+                                   style="font-size: 0.875rem; font-weight: 500; color: var(--body-text); display: flex; justify-content: space-between;">
+                                    <span>• Dining Room</span>
+                                    <span style="color: var(--muted-text); font-size: 0.75rem;">(2)</span>
+                                </a>
+                                                            <a href="http://localhost:8080/products?category=office-furniture" 
+                                   style="font-size: 0.875rem; font-weight: 500; color: var(--body-text); display: flex; justify-content: space-between;">
+                                    <span>• Office Furniture</span>
+                                    <span style="color: var(--muted-text); font-size: 0.75rem;">(2)</span>
+                                </a>
+                                                            <a href="http://localhost:8080/products?category=wardrobes-storage" 
+                                   style="font-size: 0.875rem; font-weight: 500; color: var(--body-text); display: flex; justify-content: space-between;">
+                                    <span>• Wardrobes &amp; Storage</span>
+                                    <span style="color: var(--muted-text); font-size: 0.75rem;">(1)</span>
+                                </a>
+                                                            <a href="http://localhost:8080/products?category=accent-tables" 
+                                   style="font-size: 0.875rem; font-weight: 500; color: var(--body-text); display: flex; justify-content: space-between;">
+                                    <span>• Accent &amp; Tables</span>
+                                    <span style="color: var(--muted-text); font-size: 0.75rem;">(2)</span>
+                                </a>
+                                                            <a href="http://localhost:8080/products?category=interior-solutions" 
+                                   style="font-size: 0.875rem; font-weight: 500; color: var(--body-text); display: flex; justify-content: space-between;">
+                                    <span>• Interior Solutions</span>
+                                    <span style="color: var(--muted-text); font-size: 0.75rem;">(1)</span>
+                                </a>
+                                                    </div>
+                    </div>
+
+                    <!-- Badge Filters -->
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; color: var(--muted-text); margin-bottom: 0.75rem;">Special Highlights</h4>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.875rem; cursor: pointer;">
+                                <input type="radio" name="filter" value="" checked onchange="this.form.submit()" />
+                                <span>All Highlights</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.875rem; cursor: pointer;">
+                                <input type="radio" name="filter" value="bestseller"  onchange="this.form.submit()" />
+                                <span>Best Sellers</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.875rem; cursor: pointer;">
+                                <input type="radio" name="filter" value="trending"  onchange="this.form.submit()" />
+                                <span>Trending Designs</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.875rem; cursor: pointer;">
+                                <input type="radio" name="filter" value="new"  onchange="this.form.submit()" />
+                                <span>New Arrivals</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Price Filter -->
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; color: var(--muted-text); margin-bottom: 0.75rem;">Price Range (BDT)</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                            <input type="number" name="min_price" value="" placeholder="Min ৳" class="search-input" style="height: 38px; border-radius: 6px; padding: 0 8px;" />
+                            <input type="number" name="max_price" value="" placeholder="Max ৳" class="search-input" style="height: 38px; border-radius: 6px; padding: 0 8px;" />
+                        </div>
+                        <button type="submit" class="filter-tab-btn" style="width: 100%; margin-top: 8px; height: 36px; padding: 0; font-size: 0.8125rem;">
+                            Apply Price
+                        </button>
+                    </div>
+
+                    <!-- Warranty Assurance -->
+                    <div style="background: #fdf2f2; border: 1px dashed var(--primary); border-radius: 8px; padding: 1rem; text-align: center;">
+                        <div style="font-size: 1.25rem; margin-bottom: 4px;">🛡️</div>
+                        <div style="font-size: 0.8125rem; font-weight: 700; color: var(--primary);">10-Year Warranty</div>
+                        <div style="font-size: 0.72rem; color: #475569; margin-top: 2px;">On all seasoned solid wood frames.</div>
+                    </div>
+                </form>
+            </aside>
+
+            <!-- Products Content Area -->
+            <div>
+                <!-- Top Toolbar -->
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.75rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
+                    <div style="font-size: 0.9375rem; color: var(--muted-text);">
+                        Showing <strong style="color: var(--dark);">12</strong> handcrafted furniture pieces
+                                            </div>
+
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <label style="font-size: 0.8125rem; font-weight: 600; color: var(--muted-text);">Sort By:</label>
+                        <select onchange="location = this.value;" class="search-input" style="height: 38px; border-radius: 8px; width: auto; padding: 0 12px; font-size: 0.875rem;">
+                            <option value="http://localhost:8080/products?sort=default" >Featured</option>
+                            <option value="http://localhost:8080/products?sort=price_low" >Price: Low to High</option>
+                            <option value="http://localhost:8080/products?sort=price_high" >Price: High to Low</option>
+                            <option value="http://localhost:8080/products?sort=rating" >Highest Rated</option>
+                            <option value="http://localhost:8080/products?sort=newest" >Newest Releases</option>
+                        </select>
+                    </div>
+                </div>
+
+                                    <div class="products-grid" style="grid-template-columns: repeat(3, 1fr);">
+                                                    <div class="product-card hover-elevate reveal delay-1">
+                                <div class="product-media">
+                                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Royal Chesterfield L-Shape Velvet Sofa" class="product-primary-img" loading="lazy" />
+                                                                            <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Royal Chesterfield L-Shape Velvet Sofa alternate" class="product-secondary-img" loading="lazy" />
+                                    
+                                    <div class="product-badges">
+                                                                                    <span class="badge-pill badge-discount">-16% OFF</span>
+                                                                                                                            <span class="badge-pill badge-primary">Best Seller</span>
+                                                                            </div>
+
+                                    <div class="product-floating-actions">
+                                        <button class="product-action-circle" data-wishlist-toggle="1" title="Save to Wishlist">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                        </button>
+                                        <button class="product-action-circle" data-quick-view="1" title="Quick View">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="product-quick-view-bar" data-quick-view="1">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <span>Quick Preview Specs</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-body">
+                                    <span class="product-category-name">Living Room</span>
+                                    <h3 class="product-title">
+                                        <a href="product-detail.html">Royal Chesterfield L-Shape Velvet Sofa</a>
+                                    </h3>
+
+                                    <div class="product-meta-specs">
+                                        <span>⭐ 4.9 (38)</span>
+                                        <span>•</span>
+                                        <span>Seasoned Chittagong Te...</span>
+                                    </div>
+
+                                                                            <div class="product-swatches">
+                                                                                            <span class="swatch-dot" style="background-color: #7A1315;" title="Royal Burgundy"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #1e3a2b;" title="Emerald Green"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #334155;" title="Slate Charcoal"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #f3ede2;" title="Warm Cream"></span>
+                                                                                    </div>
+                                    
+                                    <div class="product-pricing-row">
+                                        <span class="product-current-price">৳88,500</span>
+                                                                                    <span class="product-original-price">৳105,000</span>
+                                                                            </div>
+
+                                    <div class="product-card-actions">
+                                        <button class="btn-add-cart btn-sheen" data-add-to-cart data-product-id="1">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                            <span>Add to Cart</span>
+                                        </button>
+                                                                                <a href="https://wa.me/8801741452712?text=Hello+Touch+Point%2C+I+am+interested+in%3A+Royal+Chesterfield+L-Shape+Velvet+Sofa+%28%E0%A7%B388%2C500%29.+Please+share+details." target="_blank" class="btn-whatsapp-inquire" title="Quick WhatsApp Order">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="product-card hover-elevate reveal delay-2">
+                                <div class="product-media">
+                                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Nordic Minimalist King Bed with Headboard Storage" class="product-primary-img" loading="lazy" />
+                                                                            <img src="https://images.unsplash.com/photo-1540518614846-7ede433c4ef4?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Nordic Minimalist King Bed with Headboard Storage alternate" class="product-secondary-img" loading="lazy" />
+                                    
+                                    <div class="product-badges">
+                                                                                    <span class="badge-pill badge-discount">-18% OFF</span>
+                                                                                                                            <span class="badge-pill badge-primary">Trending</span>
+                                                                            </div>
+
+                                    <div class="product-floating-actions">
+                                        <button class="product-action-circle" data-wishlist-toggle="2" title="Save to Wishlist">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                        </button>
+                                        <button class="product-action-circle" data-quick-view="2" title="Quick View">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="product-quick-view-bar" data-quick-view="2">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <span>Quick Preview Specs</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-body">
+                                    <span class="product-category-name">Bedroom</span>
+                                    <h3 class="product-title">
+                                        <a href="product-detail.html">Nordic Minimalist King Bed with Headboard Storage</a>
+                                    </h3>
+
+                                    <div class="product-meta-specs">
+                                        <span>⭐ 4.8 (42)</span>
+                                        <span>•</span>
+                                        <span>Burmese Teak &amp; Canadia...</span>
+                                    </div>
+
+                                                                            <div class="product-swatches">
+                                                                                            <span class="swatch-dot" style="background-color: #b46938;" title="Natural Warm Teak"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #543729;" title="Walnut Dark Brown"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #d1c4b2;" title="Scandinavian Ash"></span>
+                                                                                    </div>
+                                    
+                                    <div class="product-pricing-row">
+                                        <span class="product-current-price">৳64,000</span>
+                                                                                    <span class="product-original-price">৳78,000</span>
+                                                                            </div>
+
+                                    <div class="product-card-actions">
+                                        <button class="btn-add-cart btn-sheen" data-add-to-cart data-product-id="2">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                            <span>Add to Cart</span>
+                                        </button>
+                                                                                <a href="https://wa.me/8801741452712?text=Hello+Touch+Point%2C+I+am+interested+in%3A+Nordic+Minimalist+King+Bed+with+Headboard+Storage+%28%E0%A7%B364%2C000%29.+Please+share+details." target="_blank" class="btn-whatsapp-inquire" title="Quick WhatsApp Order">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="product-card hover-elevate reveal delay-3">
+                                <div class="product-media">
+                                    <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Palazzo Italian Marble Top 6-Seater Dining Suite" class="product-primary-img" loading="lazy" />
+                                                                            <img src="https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Palazzo Italian Marble Top 6-Seater Dining Suite alternate" class="product-secondary-img" loading="lazy" />
+                                    
+                                    <div class="product-badges">
+                                                                                    <span class="badge-pill badge-discount">-18% OFF</span>
+                                                                                                                            <span class="badge-pill badge-primary">Top Rated</span>
+                                                                            </div>
+
+                                    <div class="product-floating-actions">
+                                        <button class="product-action-circle" data-wishlist-toggle="3" title="Save to Wishlist">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                        </button>
+                                        <button class="product-action-circle" data-quick-view="3" title="Quick View">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="product-quick-view-bar" data-quick-view="3">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <span>Quick Preview Specs</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-body">
+                                    <span class="product-category-name">Dining Room</span>
+                                    <h3 class="product-title">
+                                        <a href="product-detail.html">Palazzo Italian Marble Top 6-Seater Dining Suite</a>
+                                    </h3>
+
+                                    <div class="product-meta-specs">
+                                        <span>⭐ 5 (29)</span>
+                                        <span>•</span>
+                                        <span>Solid Teak Frame with...</span>
+                                    </div>
+
+                                                                            <div class="product-swatches">
+                                                                                            <span class="swatch-dot" style="background-color: #f0efe9;" title="Gold Vein White Marble"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #222222;" title="Black Portoro Marble"></span>
+                                                                                    </div>
+                                    
+                                    <div class="product-pricing-row">
+                                        <span class="product-current-price">৳98,000</span>
+                                                                                    <span class="product-original-price">৳120,000</span>
+                                                                            </div>
+
+                                    <div class="product-card-actions">
+                                        <button class="btn-add-cart btn-sheen" data-add-to-cart data-product-id="3">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                            <span>Add to Cart</span>
+                                        </button>
+                                                                                <a href="https://wa.me/8801741452712?text=Hello+Touch+Point%2C+I+am+interested+in%3A+Palazzo+Italian+Marble+Top+6-Seater+Dining+Suite+%28%E0%A7%B398%2C000%29.+Please+share+details." target="_blank" class="btn-whatsapp-inquire" title="Quick WhatsApp Order">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="product-card hover-elevate reveal delay-1">
+                                <div class="product-media">
+                                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Director&#039;s Executive Ergonomic Desk &amp; Credenza" class="product-primary-img" loading="lazy" />
+                                                                            <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Director&#039;s Executive Ergonomic Desk &amp; Credenza alternate" class="product-secondary-img" loading="lazy" />
+                                    
+                                    <div class="product-badges">
+                                                                                    <span class="badge-pill badge-discount">-16% OFF</span>
+                                                                                                                            <span class="badge-pill badge-primary">Office Pick</span>
+                                                                            </div>
+
+                                    <div class="product-floating-actions">
+                                        <button class="product-action-circle" data-wishlist-toggle="4" title="Save to Wishlist">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                        </button>
+                                        <button class="product-action-circle" data-quick-view="4" title="Quick View">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="product-quick-view-bar" data-quick-view="4">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <span>Quick Preview Specs</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-body">
+                                    <span class="product-category-name">Office Furniture</span>
+                                    <h3 class="product-title">
+                                        <a href="product-detail.html">Director&#039;s Executive Ergonomic Desk &amp; Credenza</a>
+                                    </h3>
+
+                                    <div class="product-meta-specs">
+                                        <span>⭐ 4.8 (21)</span>
+                                        <span>•</span>
+                                        <span>High Grade Melamine Bo...</span>
+                                    </div>
+
+                                                                            <div class="product-swatches">
+                                                                                            <span class="swatch-dot" style="background-color: #4b4845;" title="Smoked Oak &amp; Charcoal"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #5a2d22;" title="Mahogany Walnut"></span>
+                                                                                    </div>
+                                    
+                                    <div class="product-pricing-row">
+                                        <span class="product-current-price">৳52,000</span>
+                                                                                    <span class="product-original-price">৳62,000</span>
+                                                                            </div>
+
+                                    <div class="product-card-actions">
+                                        <button class="btn-add-cart btn-sheen" data-add-to-cart data-product-id="4">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                            <span>Add to Cart</span>
+                                        </button>
+                                                                                <a href="https://wa.me/8801741452712?text=Hello+Touch+Point%2C+I+am+interested+in%3A+Director%27s+Executive+Ergonomic+Desk+%26+Credenza+%28%E0%A7%B352%2C000%29.+Please+share+details." target="_blank" class="btn-whatsapp-inquire" title="Quick WhatsApp Order">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="product-card hover-elevate reveal delay-2">
+                                <div class="product-media">
+                                    <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Milano Fluted Glass 4-Door Luxury Wardrobe" class="product-primary-img" loading="lazy" />
+                                                                            <img src="https://images.unsplash.com/photo-1558997519-83ea9252def8?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Milano Fluted Glass 4-Door Luxury Wardrobe alternate" class="product-secondary-img" loading="lazy" />
+                                    
+                                    <div class="product-badges">
+                                                                                    <span class="badge-pill badge-discount">-17% OFF</span>
+                                                                                                                            <span class="badge-pill badge-primary">Italian Style</span>
+                                                                            </div>
+
+                                    <div class="product-floating-actions">
+                                        <button class="product-action-circle" data-wishlist-toggle="5" title="Save to Wishlist">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                        </button>
+                                        <button class="product-action-circle" data-quick-view="5" title="Quick View">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="product-quick-view-bar" data-quick-view="5">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <span>Quick Preview Specs</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-body">
+                                    <span class="product-category-name">Wardrobes &amp; Storage</span>
+                                    <h3 class="product-title">
+                                        <a href="product-detail.html">Milano Fluted Glass 4-Door Luxury Wardrobe</a>
+                                    </h3>
+
+                                    <div class="product-meta-specs">
+                                        <span>⭐ 4.9 (19)</span>
+                                        <span>•</span>
+                                        <span>Moisture-Resistant HDF...</span>
+                                    </div>
+
+                                                                            <div class="product-swatches">
+                                                                                            <span class="swatch-dot" style="background-color: #cfb088;" title="Matte Champagne Gold"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #1f2937;" title="Midnight Charcoal"></span>
+                                                                                    </div>
+                                    
+                                    <div class="product-pricing-row">
+                                        <span class="product-current-price">৳76,000</span>
+                                                                                    <span class="product-original-price">৳92,000</span>
+                                                                            </div>
+
+                                    <div class="product-card-actions">
+                                        <button class="btn-add-cart btn-sheen" data-add-to-cart data-product-id="5">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                            <span>Add to Cart</span>
+                                        </button>
+                                                                                <a href="https://wa.me/8801741452712?text=Hello+Touch+Point%2C+I+am+interested+in%3A+Milano+Fluted+Glass+4-Door+Luxury+Wardrobe+%28%E0%A7%B376%2C000%29.+Please+share+details." target="_blank" class="btn-whatsapp-inquire" title="Quick WhatsApp Order">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="product-card hover-elevate reveal delay-3">
+                                <div class="product-media">
+                                    <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Aura Floating Solid Teak Center Table Set" class="product-primary-img" loading="lazy" />
+                                                                            <img src="https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Aura Floating Solid Teak Center Table Set alternate" class="product-secondary-img" loading="lazy" />
+                                    
+                                    <div class="product-badges">
+                                                                                    <span class="badge-pill badge-discount">-17% OFF</span>
+                                                                                                                            <span class="badge-pill badge-primary">Fast Delivery</span>
+                                                                            </div>
+
+                                    <div class="product-floating-actions">
+                                        <button class="product-action-circle" data-wishlist-toggle="6" title="Save to Wishlist">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                        </button>
+                                        <button class="product-action-circle" data-quick-view="6" title="Quick View">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="product-quick-view-bar" data-quick-view="6">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <span>Quick Preview Specs</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-body">
+                                    <span class="product-category-name">Accent &amp; Tables</span>
+                                    <h3 class="product-title">
+                                        <a href="product-detail.html">Aura Floating Solid Teak Center Table Set</a>
+                                    </h3>
+
+                                    <div class="product-meta-specs">
+                                        <span>⭐ 4.7 (31)</span>
+                                        <span>•</span>
+                                        <span>100% Solid Chittagong...</span>
+                                    </div>
+
+                                                                            <div class="product-swatches">
+                                                                                            <span class="swatch-dot" style="background-color: #bf7938;" title="Natural Honey Teak"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #633519;" title="Deep Antique Teak"></span>
+                                                                                    </div>
+                                    
+                                    <div class="product-pricing-row">
+                                        <span class="product-current-price">৳24,500</span>
+                                                                                    <span class="product-original-price">৳29,500</span>
+                                                                            </div>
+
+                                    <div class="product-card-actions">
+                                        <button class="btn-add-cart btn-sheen" data-add-to-cart data-product-id="6">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                            <span>Add to Cart</span>
+                                        </button>
+                                                                                <a href="https://wa.me/8801741452712?text=Hello+Touch+Point%2C+I+am+interested+in%3A+Aura+Floating+Solid+Teak+Center+Table+Set+%28%E0%A7%B324%2C500%29.+Please+share+details." target="_blank" class="btn-whatsapp-inquire" title="Quick WhatsApp Order">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="product-card hover-elevate reveal delay-1">
+                                <div class="product-media">
+                                    <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Venice Hollywood Lighted Vanity Dressing Table" class="product-primary-img" loading="lazy" />
+                                                                            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Venice Hollywood Lighted Vanity Dressing Table alternate" class="product-secondary-img" loading="lazy" />
+                                    
+                                    <div class="product-badges">
+                                                                                    <span class="badge-pill badge-discount">-17% OFF</span>
+                                                                                                                            <span class="badge-pill badge-primary">Popular Choice</span>
+                                                                            </div>
+
+                                    <div class="product-floating-actions">
+                                        <button class="product-action-circle" data-wishlist-toggle="7" title="Save to Wishlist">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                        </button>
+                                        <button class="product-action-circle" data-quick-view="7" title="Quick View">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="product-quick-view-bar" data-quick-view="7">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <span>Quick Preview Specs</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-body">
+                                    <span class="product-category-name">Bedroom</span>
+                                    <h3 class="product-title">
+                                        <a href="product-detail.html">Venice Hollywood Lighted Vanity Dressing Table</a>
+                                    </h3>
+
+                                    <div class="product-meta-specs">
+                                        <span>⭐ 4.9 (27)</span>
+                                        <span>•</span>
+                                        <span>Treated Mahogany &amp; Hig...</span>
+                                    </div>
+
+                                                                            <div class="product-swatches">
+                                                                                            <span class="swatch-dot" style="background-color: #faf8f5;" title="Pure Ivory Pearl"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #e2b8ab;" title="Blush Rose Gold"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #523728;" title="Walnut Brown"></span>
+                                                                                    </div>
+                                    
+                                    <div class="product-pricing-row">
+                                        <span class="product-current-price">৳38,000</span>
+                                                                                    <span class="product-original-price">৳46,000</span>
+                                                                            </div>
+
+                                    <div class="product-card-actions">
+                                        <button class="btn-add-cart btn-sheen" data-add-to-cart data-product-id="7">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                            <span>Add to Cart</span>
+                                        </button>
+                                                                                <a href="https://wa.me/8801741452712?text=Hello+Touch+Point%2C+I+am+interested+in%3A+Venice+Hollywood+Lighted+Vanity+Dressing+Table+%28%E0%A7%B338%2C000%29.+Please+share+details." target="_blank" class="btn-whatsapp-inquire" title="Quick WhatsApp Order">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="product-card hover-elevate reveal delay-2">
+                                <div class="product-media">
+                                    <img src="https://images.unsplash.com/photo-1580481077195-c3a821a58875?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ErgoPro Dynamic Lumbar High-Back Office Chair" class="product-primary-img" loading="lazy" />
+                                                                            <img src="https://images.unsplash.com/photo-1505797149-43b0069ec26b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ErgoPro Dynamic Lumbar High-Back Office Chair alternate" class="product-secondary-img" loading="lazy" />
+                                    
+                                    <div class="product-badges">
+                                                                                    <span class="badge-pill badge-discount">-17% OFF</span>
+                                                                                                                            <span class="badge-pill badge-primary">Doctor Recommended</span>
+                                                                            </div>
+
+                                    <div class="product-floating-actions">
+                                        <button class="product-action-circle" data-wishlist-toggle="8" title="Save to Wishlist">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                        </button>
+                                        <button class="product-action-circle" data-quick-view="8" title="Quick View">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="product-quick-view-bar" data-quick-view="8">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <span>Quick Preview Specs</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-body">
+                                    <span class="product-category-name">Office Furniture</span>
+                                    <h3 class="product-title">
+                                        <a href="product-detail.html">ErgoPro Dynamic Lumbar High-Back Office Chair</a>
+                                    </h3>
+
+                                    <div class="product-meta-specs">
+                                        <span>⭐ 4.8 (54)</span>
+                                        <span>•</span>
+                                        <span>Aircraft Grade Aluminu...</span>
+                                    </div>
+
+                                                                            <div class="product-swatches">
+                                                                                            <span class="swatch-dot" style="background-color: #1a1a1a;" title="Matte Black"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #6b7280;" title="Space Grey"></span>
+                                                                                    </div>
+                                    
+                                    <div class="product-pricing-row">
+                                        <span class="product-current-price">৳21,500</span>
+                                                                                    <span class="product-original-price">৳26,000</span>
+                                                                            </div>
+
+                                    <div class="product-card-actions">
+                                        <button class="btn-add-cart btn-sheen" data-add-to-cart data-product-id="8">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                            <span>Add to Cart</span>
+                                        </button>
+                                                                                <a href="https://wa.me/8801741452712?text=Hello+Touch+Point%2C+I+am+interested+in%3A+ErgoPro+Dynamic+Lumbar+High-Back+Office+Chair+%28%E0%A7%B321%2C500%29.+Please+share+details." target="_blank" class="btn-whatsapp-inquire" title="Quick WhatsApp Order">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="product-card hover-elevate reveal delay-3">
+                                <div class="product-media">
+                                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Grandeur Acoustic Wood Slat Media TV Unit" class="product-primary-img" loading="lazy" />
+                                                                            <img src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Grandeur Acoustic Wood Slat Media TV Unit alternate" class="product-secondary-img" loading="lazy" />
+                                    
+                                    <div class="product-badges">
+                                                                                    <span class="badge-pill badge-discount">-17% OFF</span>
+                                                                                                                            <span class="badge-pill badge-primary">Modern Interior</span>
+                                                                            </div>
+
+                                    <div class="product-floating-actions">
+                                        <button class="product-action-circle" data-wishlist-toggle="9" title="Save to Wishlist">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                        </button>
+                                        <button class="product-action-circle" data-quick-view="9" title="Quick View">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="product-quick-view-bar" data-quick-view="9">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <span>Quick Preview Specs</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-body">
+                                    <span class="product-category-name">Interior Solutions</span>
+                                    <h3 class="product-title">
+                                        <a href="product-detail.html">Grandeur Acoustic Wood Slat Media TV Unit</a>
+                                    </h3>
+
+                                    <div class="product-meta-specs">
+                                        <span>⭐ 4.9 (16)</span>
+                                        <span>•</span>
+                                        <span>Natural Teak Slats on...</span>
+                                    </div>
+
+                                                                            <div class="product-swatches">
+                                                                                            <span class="swatch-dot" style="background-color: #7d5538;" title="Natural Smoked Teak"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #262626;" title="Dark Ebony"></span>
+                                                                                    </div>
+                                    
+                                    <div class="product-pricing-row">
+                                        <span class="product-current-price">৳49,000</span>
+                                                                                    <span class="product-original-price">৳59,000</span>
+                                                                            </div>
+
+                                    <div class="product-card-actions">
+                                        <button class="btn-add-cart btn-sheen" data-add-to-cart data-product-id="9">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                            <span>Add to Cart</span>
+                                        </button>
+                                                                                <a href="https://wa.me/8801741452712?text=Hello+Touch+Point%2C+I+am+interested+in%3A+Grandeur+Acoustic+Wood+Slat+Media+TV+Unit+%28%E0%A7%B349%2C000%29.+Please+share+details." target="_blank" class="btn-whatsapp-inquire" title="Quick WhatsApp Order">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="product-card hover-elevate reveal delay-1">
+                                <div class="product-media">
+                                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Serenity Solid Teak Lounge Armchair with Ottoman" class="product-primary-img" loading="lazy" />
+                                                                            <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Serenity Solid Teak Lounge Armchair with Ottoman alternate" class="product-secondary-img" loading="lazy" />
+                                    
+                                    <div class="product-badges">
+                                                                                    <span class="badge-pill badge-discount">-14% OFF</span>
+                                                                                                                            <span class="badge-pill badge-primary">Artisan Handcrafted</span>
+                                                                            </div>
+
+                                    <div class="product-floating-actions">
+                                        <button class="product-action-circle" data-wishlist-toggle="10" title="Save to Wishlist">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                        </button>
+                                        <button class="product-action-circle" data-quick-view="10" title="Quick View">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="product-quick-view-bar" data-quick-view="10">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <span>Quick Preview Specs</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-body">
+                                    <span class="product-category-name">Living Room</span>
+                                    <h3 class="product-title">
+                                        <a href="product-detail.html">Serenity Solid Teak Lounge Armchair with Ottoman</a>
+                                    </h3>
+
+                                    <div class="product-meta-specs">
+                                        <span>⭐ 4.8 (23)</span>
+                                        <span>•</span>
+                                        <span>Natural Teak &amp; Belgian...</span>
+                                    </div>
+
+                                                                            <div class="product-swatches">
+                                                                                            <span class="swatch-dot" style="background-color: #ded9cf;" title="Oatmeal Bouclé"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #c45c3d;" title="Terracotta Rust"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #5a684b;" title="Olive Green"></span>
+                                                                                    </div>
+                                    
+                                    <div class="product-pricing-row">
+                                        <span class="product-current-price">৳36,000</span>
+                                                                                    <span class="product-original-price">৳42,000</span>
+                                                                            </div>
+
+                                    <div class="product-card-actions">
+                                        <button class="btn-add-cart btn-sheen" data-add-to-cart data-product-id="10">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                            <span>Add to Cart</span>
+                                        </button>
+                                                                                <a href="https://wa.me/8801741452712?text=Hello+Touch+Point%2C+I+am+interested+in%3A+Serenity+Solid+Teak+Lounge+Armchair+with+Ottoman+%28%E0%A7%B336%2C000%29.+Please+share+details." target="_blank" class="btn-whatsapp-inquire" title="Quick WhatsApp Order">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="product-card hover-elevate reveal delay-2">
+                                <div class="product-media">
+                                    <img src="https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Heritage 8-Seater Grand Royal Teak Dining Suite" class="product-primary-img" loading="lazy" />
+                                                                            <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Heritage 8-Seater Grand Royal Teak Dining Suite alternate" class="product-secondary-img" loading="lazy" />
+                                    
+                                    <div class="product-badges">
+                                                                                    <span class="badge-pill badge-discount">-15% OFF</span>
+                                                                                                                            <span class="badge-pill badge-primary">Master Carver</span>
+                                                                            </div>
+
+                                    <div class="product-floating-actions">
+                                        <button class="product-action-circle" data-wishlist-toggle="11" title="Save to Wishlist">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                        </button>
+                                        <button class="product-action-circle" data-quick-view="11" title="Quick View">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="product-quick-view-bar" data-quick-view="11">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <span>Quick Preview Specs</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-body">
+                                    <span class="product-category-name">Dining Room</span>
+                                    <h3 class="product-title">
+                                        <a href="product-detail.html">Heritage 8-Seater Grand Royal Teak Dining Suite</a>
+                                    </h3>
+
+                                    <div class="product-meta-specs">
+                                        <span>⭐ 5 (18)</span>
+                                        <span>•</span>
+                                        <span>100% Solid Chittagong...</span>
+                                    </div>
+
+                                                                            <div class="product-swatches">
+                                                                                            <span class="swatch-dot" style="background-color: #7c3f1d;" title="Traditional Segun Polish"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #482613;" title="Antiqued Rich Walnut"></span>
+                                                                                    </div>
+                                    
+                                    <div class="product-pricing-row">
+                                        <span class="product-current-price">৳135,000</span>
+                                                                                    <span class="product-original-price">৳160,000</span>
+                                                                            </div>
+
+                                    <div class="product-card-actions">
+                                        <button class="btn-add-cart btn-sheen" data-add-to-cart data-product-id="11">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                            <span>Add to Cart</span>
+                                        </button>
+                                                                                <a href="https://wa.me/8801741452712?text=Hello+Touch+Point%2C+I+am+interested+in%3A+Heritage+8-Seater+Grand+Royal+Teak+Dining+Suite+%28%E0%A7%B3135%2C000%29.+Please+share+details." target="_blank" class="btn-whatsapp-inquire" title="Quick WhatsApp Order">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="product-card hover-elevate reveal delay-3">
+                                <div class="product-media">
+                                    <img src="https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Haven Floating Teak Bedside Table (Pair of 2)" class="product-primary-img" loading="lazy" />
+                                                                            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Haven Floating Teak Bedside Table (Pair of 2) alternate" class="product-secondary-img" loading="lazy" />
+                                    
+                                    <div class="product-badges">
+                                                                                    <span class="badge-pill badge-discount">-16% OFF</span>
+                                                                                                                            <span class="badge-pill badge-primary">Set of 2</span>
+                                                                            </div>
+
+                                    <div class="product-floating-actions">
+                                        <button class="product-action-circle" data-wishlist-toggle="12" title="Save to Wishlist">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                        </button>
+                                        <button class="product-action-circle" data-quick-view="12" title="Quick View">
+                                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="product-quick-view-bar" data-quick-view="12">
+                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <span>Quick Preview Specs</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-body">
+                                    <span class="product-category-name">Accent &amp; Tables</span>
+                                    <h3 class="product-title">
+                                        <a href="product-detail.html">Haven Floating Teak Bedside Table (Pair of 2)</a>
+                                    </h3>
+
+                                    <div class="product-meta-specs">
+                                        <span>⭐ 4.8 (34)</span>
+                                        <span>•</span>
+                                        <span>Solid Teak &amp; Natural R...</span>
+                                    </div>
+
+                                                                            <div class="product-swatches">
+                                                                                            <span class="swatch-dot" style="background-color: #cda06a;" title="Natural Honey &amp; Cane"></span>
+                                                                                            <span class="swatch-dot" style="background-color: #5a3a23;" title="Dark Walnut &amp; Cane"></span>
+                                                                                    </div>
+                                    
+                                    <div class="product-pricing-row">
+                                        <span class="product-current-price">৳18,500</span>
+                                                                                    <span class="product-original-price">৳22,000</span>
+                                                                            </div>
+
+                                    <div class="product-card-actions">
+                                        <button class="btn-add-cart btn-sheen" data-add-to-cart data-product-id="12">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                            <span>Add to Cart</span>
+                                        </button>
+                                                                                <a href="https://wa.me/8801741452712?text=Hello+Touch+Point%2C+I+am+interested+in%3A+Haven+Floating+Teak+Bedside+Table+%28Pair+of+2%29+%28%E0%A7%B318%2C500%29.+Please+share+details." target="_blank" class="btn-whatsapp-inquire" title="Quick WhatsApp Order">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+
+                    <!-- Pagination -->
+                    <div style="margin-top: 3rem; display: flex; justify-content: center;">
+                        
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <!-- 3. SLIDE-OVER CART DRAWER -->
+    <div id="cartBackdrop" class="cart-drawer-backdrop"></div>
+    <aside id="cartDrawer" class="cart-drawer">
+        <div class="cart-drawer-header">
+            <div class="cart-drawer-title">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                <span>Shopping Cart</span>
+            </div>
+            <button class="cart-close-btn" data-cart-close aria-label="Close cart">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+
+        <div id="cartProgressBox" class="shipping-progress-box">
+            <div id="shippingProgressText" class="shipping-progress-text">
+                Add ৳50,000 for <strong>FREE Doorstep Delivery</strong>
+            </div>
+            <div class="shipping-progress-bar">
+                <div id="shippingProgressFill" class="shipping-progress-fill" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <div id="cartItemsList" class="cart-items-list">
+            <!-- Populated dynamically via JS or server rendered -->
+        </div>
+
+        <div id="cartDrawerFooter" class="cart-drawer-footer">
+            <div class="cart-summary-line">
+                <span>Subtotal</span>
+                <span id="cartSubtotalDisplay" style="font-weight: 700;">৳0</span>
+            </div>
+            <div class="cart-summary-line">
+                <span>Estimated Shipping</span>
+                <span id="cartShippingDisplay" style="color: #16a34a; font-weight: 600;">FREE</span>
+            </div>
+            <div class="cart-summary-line cart-summary-total">
+                <span>Total Amount</span>
+                <span id="cartTotalDisplay" style="color: var(--primary);">৳0</span>
+            </div>
+            <a href="http://localhost:8080/checkout" class="cart-checkout-btn">
+                <span>Proceed To Checkout</span>
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+            <div style="text-align: center; margin-top: 0.75rem; font-size: 0.75rem; color: #64748b;">
+                🔒 100% Safe &amp; Encrypted Checkout
+            </div>
+        </div>
+    </aside>
+
+    <!-- 4. QUICK VIEW MODAL -->
+    <div id="quickViewModal" class="modal-backdrop">
+        <div class="modal-dialog">
+            <button id="quickViewClose" class="modal-close-icon" aria-label="Close modal">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div id="quickViewContent"></div>
+        </div>
+    </div>
+
+    <!-- 5. CONSULTATION MODAL -->
+    <div id="consultationModal" class="modal-backdrop">
+        <div class="modal-dialog" style="max-width: 580px;">
+            <button id="consultationClose" class="modal-close-icon" aria-label="Close modal">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div style="padding: 2.25rem;">
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <img src="assets/images/touchpoint-logo.png" alt="Touch Point Logo" style="height: 42px; width: auto; object-fit: contain; margin-bottom: 0.5rem;" />
+                    <div style="font-size: 0.8125rem; font-weight: 800; text-transform: uppercase;"><span style="color: #ea580c;">Touch</span> <span style="color: #007f82;">Point</span> Design Studio</div>
+                    <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--dark); margin-top: 0.25rem;">Book Free Interior Consultation</h3>
+                    <p style="font-size: 0.875rem; color: var(--muted-text); margin-top: 0.5rem;">Our expert architects and furniture consultants will help design your dream space.</p>
+                </div>
+                <form id="consultationForm" style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div>
+                        <label style="font-size: 0.8125rem; font-weight: 700; display: block; margin-bottom: 4px;">Full Name *</label>
+                        <input type="text" name="name" required class="search-input" style="border-radius: 8px; height: 42px;" placeholder="e.g. Tanvir Ahmed" />
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div>
+                            <label style="font-size: 0.8125rem; font-weight: 700; display: block; margin-bottom: 4px;">Phone Number *</label>
+                            <input type="tel" name="phone" required class="search-input" style="border-radius: 8px; height: 42px;" placeholder="+880 18XXXXXXXX" />
+                        </div>
+                        <div>
+                            <label style="font-size: 0.8125rem; font-weight: 700; display: block; margin-bottom: 4px;">Service / Inquiry Type</label>
+                            <select name="room_type" class="search-input" style="border-radius: 8px; height: 42px;">
+                                <option value="Living Room">Living Room (Home Furniture)</option>
+                                <option value="Master Bedroom">Master Bedroom</option>
+                                <option value="Dining Room">Dining Room</option>
+                                <option value="Full Duplex / Apartment">Full Duplex / Apartment</option>
+                                <option value="Corporate Office & Workstations">Corporate Office &amp; Workstations (Touch Point Associates)</option>
+                                <option value="Bank Branch Turnkey Fit-out">Bank Branch Turnkey Fit-out (Touch Point Associates)</option>
+                                <option value="Saint Martin Tour Package">Saint Martin Tour Package (NDP Tours &amp; Travels)</option>
+                                <option value="Island Resort Booking">Island Resort Booking - Captain House / Honeymoon View (NDP)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label style="font-size: 0.8125rem; font-weight: 700; display: block; margin-bottom: 4px;">Notes / Custom Wood Requirements</label>
+                        <textarea name="notes" rows="3" class="search-input" style="border-radius: 8px; height: auto; padding: 10px;" placeholder="Tell us your space dimensions or style preference..."></textarea>
+                    </div>
+                    <button type="submit" class="cart-checkout-btn" style="margin-top: 0.5rem;">
+                        Confirm Free Booking
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/8801741452712?text=Hello%20Touch%20Point!%20I%20would%20like%20to%20inquire%20about%20your%20premium%20collection." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="Chat on WhatsApp (+880 1741-452712)">
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.768-5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+    </a>
+
+    <!-- 7. BACK TO TOP BUTTON -->
+    <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path></svg>
+    </button>
+
+    <!-- 8. FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main-grid">
+                <!-- Col 1: Brand & Contacts -->
+                <div>
+                    <div style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 12px;">
+                        <div style="background: #ffffff; border-radius: 12px; padding: 6px 8px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,0.2);">
+                            <img src="assets/images/touchpoint-logo.png" alt="Touch Point Logo" style="height: 48px; width: auto; object-fit: contain;" />
+                        </div>
+                        <div>
+                            <div style="font-size: 1.7rem; font-weight: 800; letter-spacing: -0.5px; line-height: 1.1;">
+                                <span style="color: #ff9b2e;">TOUCH</span> <span style="color: #2dd4bf;">POINT</span>
+                            </div>
+                            <span style="font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: #f8fafc; font-weight: 600;">Luxury Furniture &amp; Interior</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <svg width="14" height="14" fill="#fff" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <p style="line-height: 1.5;">House- 11, Main Road, Block - E, Banasree, Dhaka -1219, Bangladesh</p>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <svg width="14" height="14" fill="#fff" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        </div>
+                        <a href="tel:+8801741452712" style="font-weight: 700; color: #fff;">+880 1741-452712</a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon" style="background: #25d366;">
+                            <svg width="15" height="15" fill="#fff" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.768-5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                        </div>
+                        <a href="https://wa.me/8801741452712?text=Hello%20Touch%20Point!%20I%20would%20like%20to%20inquire%20about%20furniture." target="_blank" rel="noopener noreferrer" style="color: #4ade80; font-weight: 700; text-decoration: none;">WhatsApp: +880 1741-452712</a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <svg width="14" height="14" fill="#fff" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        </div>
+                        <a href="mailto:info@touchpoint.com.bd" style="color: #fff; text-decoration: underline;">info@touchpoint.com.bd</a>
+                    </div>
+
+                    <!-- Connect On Facebook & WhatsApp -->
+                    <div style="margin-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1rem;">
+                        <div style="font-size: 0.8125rem; font-weight: 700; color: #f8fafc; text-transform: uppercase; margin-bottom: 0.75rem; letter-spacing: 0.05em; display: flex; align-items: center; gap: 6px;">
+                            <span>Follow Us On Facebook &amp; WhatsApp:</span>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <a href="https://www.facebook.com/share/1EvBqk6phj/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 10px; color: #e2e8f0; font-size: 0.875rem; background: rgba(255,255,255,0.06); padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;" onmouseover="this.style.background='rgba(59,130,246,0.2)'; this.style.borderColor='#3b82f6';" onmouseout="this.style.background='rgba(255,255,255,0.06)'; this.style.borderColor='rgba(255,255,255,0.1)';">
+                                <div class="footer-contact-icon" style="width: 26px; height: 26px; background: #1877f2; flex-shrink: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="14" height="14" fill="#fff" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                </div>
+                                <span style="font-weight: 600;">Touch Point Facebook Page (Official) ↗</span>
+                            </a>
+                            <a href="https://www.facebook.com/share/1CEbw9XcNt/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 10px; color: #e2e8f0; font-size: 0.875rem; background: rgba(255,255,255,0.06); padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;" onmouseover="this.style.background='rgba(59,130,246,0.2)'; this.style.borderColor='#3b82f6';" onmouseout="this.style.background='rgba(255,255,255,0.06)'; this.style.borderColor='rgba(255,255,255,0.1)';">
+                                <div class="footer-contact-icon" style="width: 26px; height: 26px; background: #1877f2; flex-shrink: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="14" height="14" fill="#fff" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                </div>
+                                <span style="font-weight: 600;">Touch Point Furniture Gallery ↗</span>
+                            </a>
+                            <a href="https://www.facebook.com/share/1C1rc91JsK/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 10px; color: #e2e8f0; font-size: 0.875rem; background: rgba(255,255,255,0.06); padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;" onmouseover="this.style.background='rgba(59,130,246,0.2)'; this.style.borderColor='#3b82f6';" onmouseout="this.style.background='rgba(255,255,255,0.06)'; this.style.borderColor='rgba(255,255,255,0.1)';">
+                                <div class="footer-contact-icon" style="width: 26px; height: 26px; background: #1877f2; flex-shrink: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="14" height="14" fill="#fff" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                </div>
+                                <span style="font-weight: 600;">Touch Point Customer Showcase ↗</span>
+                            </a>
+                            <a href="https://wa.me/8801741452712?text=Hello%20Touch%20Point!%20I%20would%20like%20to%20inquire%20about%20furniture." target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 10px; color: #e2e8f0; font-size: 0.875rem; background: rgba(37,211,102,0.12); padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(37,211,102,0.3); transition: all 0.2s;" onmouseover="this.style.background='rgba(37,211,102,0.25)';" onmouseout="this.style.background='rgba(37,211,102,0.12)';">
+                                <div class="footer-contact-icon" style="width: 26px; height: 26px; background: #25d366; flex-shrink: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="14" height="14" fill="#fff" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.585 1.961.942 3.011.942 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.768-5.768-5.768zm0 10.375c-.911 0-1.782-.262-2.545-.733l-.182-.108-1.577.413.42-1.537-.118-.188c-.521-.828-.796-1.789-.796-2.775 0-2.895 2.355-5.25 5.25-5.25 2.894 0 5.25 2.355 5.25 5.25 0 2.894-2.356 5.25-5.25 5.25z"/></svg>
+                                </div>
+                                <span style="font-weight: 700; color: #4ade80;">Chat on WhatsApp (+880 1741-452712) ↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 2: The Company -->
+                <div>
+                    <h3 class="footer-col-title">The Company</h3>
+                    <ul class="footer-links-list">
+                        <li class="footer-link-item"><a href="about.html">About Touch Point</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/about#heritage">Heritage &amp; Factory (Since 2011)</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/about#leadership">Executive Management</a></li>
+                        <li class="footer-link-item"><a href="showrooms.html">Corporate HQ &amp; Factory Studios</a></li>
+                        <li class="footer-link-item"><a href="products.html">Full Furniture Catalog</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/privacy">Privacy Policy</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/return">Return &amp; Replacement</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Sister Concerns -->
+                <div>
+                    <h3 class="footer-col-title">Sister Concerns</h3>
+                    <ul class="footer-links-list">
+                        <li class="footer-link-item"><a href="sister-concerns.html" style="color: #fef08a; font-weight: 700;">Group Overview ↗</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/sister-concerns#touchpoint-associates">🏛️ Touch Point Associates</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/sister-concerns#touchpoint-associates">Commercial &amp; Bank Turnkey Fitouts</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/sister-concerns#ndp-tours">🏝️ NDP Tours &amp; Travels</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/sister-concerns#ndp-tours">Captain House Resort (Saint Martin)</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/sister-concerns#ndp-tours">Honeymoon Beach View Resort</a></li>
+                        <li class="footer-link-item"><a href="http://localhost:8080/sister-concerns#ndp-tours">Saint Martin Cruise Tickets (MV Bay One)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Corporate Facilities & Contacts -->
+                <div>
+                    <h3 class="footer-col-title">Our Facilities</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.84rem; color: #cbd5e1;">
+                        <div>
+                            <strong style="color: #fff; display: block;">📍 Corporate Headquarters:</strong>
+                            House # 11, Main Road, Block - E (Near Farazy Hospital), Banasree, Dhaka - 1219
+                        </div>
+                        <div>
+                            <strong style="color: #fff; display: block;">📐 Gulshan Architecture Studio:</strong>
+                            House # 16, Road # 113A, 5th Fl (A-1), Gulshan-2, Dhaka
+                        </div>
+                        <div>
+                            <strong style="color: #fff; display: block;">🌴 Moghbazar Sales Office:</strong>
+                            8 Gulfresha Plaza (1st Fl), Bara Moghbazar, Ramna, Dhaka
+                        </div>
+                        <div>
+                            <strong style="color: #fff; display: block;">🏭 Manufacturing Factory:</strong>
+                            Satarkul Road, Pool Road, Satarkul, Badda, Dhaka
+                        </div>
+                        <div style="padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.15);">
+                            <span style="color: #facc15; font-weight: 700;">Emails:</span>
+                            <div style="color: #fff;">touchpoint.mtp@gmail.com</div>
+                            <div style="color: #fff;">tpassociates23@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright & Developed By Bar -->
+            <div class="footer-bottom-bar">
+                <div>© 2026 Touch Point. All rights reserved.</div>
+                <div>
+                    Developed By <a href="https://smartsoft.bd/" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s;" onmouseover="this.style.color='#93c5fd'" onmouseout="this.style.color='#60a5fa'">Smart Soft Limited</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/app.js"></script>
+    </body>
+</html>
